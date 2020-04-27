@@ -79,13 +79,15 @@ layout: default
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata"
             onloadeddata="document.querySelector('.videobg-header .pattern-overlay').style.opacity = 0.80;">
             <source src="{{site.splash-videobg}}" type="video/mp4">
-            <!-- <source src="https://res.cloudinary.com/gowrav/video/upload/v1587997357/starya_splash_oqqrjd.mp4" type="video/mp4"> -->
+            <!-- <source src="https://res.cloudinary.com/gowrav/video/upload/v1587997357/starya_splash_oqqrjd.mp4#t=0,19" type="video/mp4"> -->
                     
         </video>
         <script>
             const video = document.querySelector('video');
             video.onended = (event) => {
-                console.log('video complete');
+                $('html, body').animate({
+                    scrollTop: $("#homegrown").offset().top
+                }, 2000);
             };
         </script>
 
@@ -127,7 +129,7 @@ layout: default
 
 
 <!-- Basic Intro-->
-<div class="features-6">
+<div id="homegrown" class="features-6">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-4">
@@ -167,7 +169,7 @@ layout: default
 <script type="text/javascript" src="{{site.url}}/assets/js/plugins/jquery.appear.js"></script>
 <!-- <script type="text/javascript" src="{{site.url}}/assets/js/plugins/ScrollMagic.min.js"></script> -->
 
-<div class="container py-5">
+<div class="container py-4">
         <div  id="homegrown" class="row align-items-center">
             <div class="col-lg-9">
                 <div id="bikeimagesequence">
