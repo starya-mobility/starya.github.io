@@ -1,159 +1,249 @@
-- title: "metal gears"
-  url: 
-    raw: "https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1560574188-6a6774965120?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "beam design-printed paper on desk"
-  url: 
-    raw: "https://images.unsplash.com/photo-1433840496881-cbd845929862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1433840496881-cbd845929862?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1433840496881-cbd845929862?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1433840496881-cbd845929862?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1433840496881-cbd845929862?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "black and red click pen on white printer paper"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "blue and silver industrial machine"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "black flat screen computer monitor"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "woman in white long sleeve shirt using black laptop computer"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581091215367-9b6c00b3035a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "electronic circuit boards near tester"
-  url: 
-    raw: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "man standing beside train rail"
-  url: 
-    raw: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "black flat screen computer monitor"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "woman in white shirt writing on white paper"
-  url: 
-    raw: "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-
-- title: "gray engine bay"
-  url: 
-    raw: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
+- title: "TI_Proto_0_Run"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002236/Gallery%20Starya/TI_Proto_0_Run_fn4gxt.mp4"
+  format: "mp4"
+  type: "video"
   
-- title: "car engine bay"
-  url: 
-    raw: "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "gray metal equipment lot"
-  url: 
-    raw: "https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1551609189-eba71b3a8566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "gray and black engine"
-  url: 
-    raw: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "Edelbrock vehicle part"
-  url: 
-    raw: "https://images.unsplash.com/photo-1564730465543-e732e7fc9c10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1564730465543-e732e7fc9c10?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1564730465543-e732e7fc9c10?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1564730465543-e732e7fc9c10?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1564730465543-e732e7fc9c10?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "black and red generator"
-  url: 
-    raw: "https://images.unsplash.com/photo-1523559094051-53bac879eb80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1523559094051-53bac879eb80?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1523559094051-53bac879eb80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1523559094051-53bac879eb80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1523559094051-53bac879eb80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "stainless steel engine bay"
-  url: 
-    raw: "https://images.unsplash.com/photo-1552656967-7a0991a13906?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1552656967-7a0991a13906?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1552656967-7a0991a13906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1552656967-7a0991a13906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1552656967-7a0991a13906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "gray and black motorcycle engine"
-  url: 
-    raw: "https://images.unsplash.com/photo-1534755563369-ad37931ac77b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1534755563369-ad37931ac77b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1534755563369-ad37931ac77b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1534755563369-ad37931ac77b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1534755563369-ad37931ac77b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "grey and red vehicle engine view"
-  url: 
-    raw: "https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1545100400-91bc4c592aa0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-  
-- title: "BMW 132 wheel"
-  url: 
-    raw: "https://images.unsplash.com/photo-1550897991-93f2a528de18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    full: "https://images.unsplash.com/photo-1550897991-93f2a528de18?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    regular: "https://images.unsplash.com/photo-1550897991-93f2a528de18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    small: "https://images.unsplash.com/photo-1550897991-93f2a528de18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
-    thumb: "https://images.unsplash.com/photo-1550897991-93f2a528de18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM1NTQ2fQ"
+- title: "Team_Starya_at_MSRIT_Lab"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Team_Starya_at_MSRIT_Lab_i45qje.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "App_Preview"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/App_Preview_avrgmr.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Felicitation_at_Altair_with_Startup_India"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Felicitation_at_Altair_with_Startup_India_ztoofi.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Shiny_Body"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Shiny_Body_tmhab0.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Peak_Power_Achieved_with_Proto_1"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Peak_Power_Achieved_with_Proto_1_teb4an.png"
+  format: "png"
+  type: "image"
+
+- title: "Ravi_introducing_ARK_at_Shrunga_Expo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Ravi_introducing_ARK_at_Shrunga_Expo_npli1j.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Altair_Winners_Photo_Shoot"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Altair_Winners_Photo_Shoot_zchozi.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Stare_for_the_Photo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Stare_for_the_Photo_hdz8fc.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Shiny_new_Motor_with_Sparkling_Board"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002214/Gallery%20Starya/Shiny_new_Motor_with_Sparkling_Board_zqy34a.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Night_out_for_Debugging"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002214/Gallery%20Starya/Night_out_for_Debugging_wjk5ws.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Men_at_Leisure"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002214/Gallery%20Starya/Men_at_Leisure_dbnipe.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Controller_Up_Close"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002213/Gallery%20Starya/Controller_Up_Close_jeyw2n.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Hello_World_on_Motor_Controller"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002213/Gallery%20Starya/Hello_World_on_Motor_Controller_cmiigc.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Vulnerable_Controller_inside_Proto_2"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002213/Gallery%20Starya/Vulnerable_Controller_inside_Proto_2_zifyue.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Proto_2_with_Pb_Cells"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002213/Gallery%20Starya/Proto_2_with_Pb_Cells_fhc1by.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Controller_on_the_Heat_Sink"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002212/Gallery%20Starya/Controller_on_the_Heat_Sink_pept4s.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Field_winding_of_Proto_2"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002212/Gallery%20Starya/Field_winding_of_Proto_2_bipudv.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Deep_inside_the_Motor"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002212/Gallery%20Starya/Deep_inside_the_Motor_m9yhnm.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Award_Distribuition_at_Altair"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002212/Gallery%20Starya/Award_Distribuition_at_Altair_dayqzj.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Whats_up_with_this"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002212/Gallery%20Starya/Whats_up_with_this_dtbiru.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Team_at_MSRIT_Lab"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002211/Gallery%20Starya/Team_at_MSRIT_Lab_ldwt9e.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "First_set_of_Pulleys"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002211/Gallery%20Starya/First_set_of_Pulleys_rndit9.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Staff_Inspection_at_MSRIT"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002211/Gallery%20Starya/Staff_Inspection_at_MSRIT_bpqqep.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Altair_Final_Presentation"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002210/Gallery%20Starya/Altair_Final_Presentation_xdkhgx.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Crowd_at_Shrunga_Expo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002210/Gallery%20Starya/Crowd_at_Shrunga_Expo_yzu7pt.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Lets_get_this_assembled"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002210/Gallery%20Starya/Lets_get_this_assembled_kznt8i.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Bench_Trials"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002209/Gallery%20Starya/Bench_Trials_vzw81e.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Ayudpooja_Celebrations"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002209/Gallery%20Starya/Ayudpooja_Celebrations_a88w6h.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "WorkBench"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002208/Gallery%20Starya/WorkBench_dafbkr.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "250watt_PMSM_for_Proto_0"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002208/Gallery%20Starya/250watt_PMSM_for_Proto_0_fupixt.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Coolant_Leakage_Test"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002207/Gallery%20Starya/Coolant_Leakage_Test_nrcwuu.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Winding_resistance_measurement_by_Nagesh"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002206/Gallery%20Starya/Winding_resistance_measurement_by_Nagesh_aju2fb.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Burnt_Hopes"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002206/Gallery%20Starya/Burnt_Hopes_h6erjj.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Candid_discussion_at_Expo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002206/Gallery%20Starya/Candid_discussion_at_Expo_qbwkux.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Detailing_to_a_student"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002205/Gallery%20Starya/Detailing_to_a_student_a6hwab.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Interns_at_MSRIT_Labs_on_Akash_s_Birthday"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002205/Gallery%20Starya/Interns_at_MSRIT_Labs_on_Akash_s_Birthday_xnrtit.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Proto_1_put_to_rest"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002204/Gallery%20Starya/Proto_1_put_to_rest_n4qbud.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Explanation_to_Students_at_Shrunga_Expo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002204/Gallery%20Starya/Explanation_to_Students_at_Shrunga_Expo_edw50s.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Cheque_Handover_at_Altair"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002204/Gallery%20Starya/Cheque_Handover_at_Altair_fbj0dz.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Study_of_Chasis"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002203/Gallery%20Starya/Study_of_Chasis_lx5bvx.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Winding_Winding_Winding"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002202/Gallery%20Starya/Winding_Winding_Winding_yrw568.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "TI_Controller_board_from_prototype"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002202/Gallery%20Starya/TI_Controller_board_from_prototype_ugqctp.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Display_Piece"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002199/Gallery%20Starya/Display_Piece_ylg0aw.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Rotating_Table_at_Shrunga_Expo"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002199/Gallery%20Starya/Rotating_Table_at_Shrunga_Expo_mut5hr.gif"
+  format: "gif"
+  type: "image"
+
+- title: "Proto_2_Skeleton_View"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002198/Gallery%20Starya/Proto_2_Skeleton_View_keubio.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Lets_Race_but_Indoors"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002192/Gallery%20Starya/Lets_Race_but_Indoors_xpiyli.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Trial_Run_with_Proto_0"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002192/Gallery%20Starya/Trial_Run_with_Proto_0_fnwlmm.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Proto_0_Bench_Load_Testing_on_TI_Board"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002191/Gallery%20Starya/Proto_0_Bench_Load_Testing_on_TI_Board_fwj1ne.mp4"
+  format: "mp4"
+  type: "video"
+
+- title: "Current_to_Speed_Loop_Switch_Over"
+  url: "https://res.cloudinary.com/gowrav/video/upload/v1588002187/Gallery%20Starya/Current_to_Speed_Loop_Switch_Over_xacvyq.mp4"
+  format: "mp4"
+  type: "video"
