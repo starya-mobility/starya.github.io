@@ -8,11 +8,11 @@ baseurl: "/" # the subpath of your site, e.g. /home /blog
 logo: 'https://starya.in/assets/img/brand/white.png'
 logo-alt: 'https://starya.in/assets/img/brand/orange.png'
 favicon-folder: 'https://starya.in/assets/img/favicon'
-splash-videobg: 'https://res.cloudinary.com/gowrav/video/upload/v1586781317/IMG_2179_qtl9xe.mp4'
+splash-videobg: 'https://starya.in/assets/video/starya_splash_bg.mp4'
 googleapis_KEY: 'AIzaSyBgPPCxfvGYCznsH_Pp6DLRjBjcjykUdVI'
 # google_analytics: 'UA-xxxxxxxx-1'
 # disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 email: staryamobility@gmail.com
