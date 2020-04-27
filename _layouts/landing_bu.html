@@ -1,0 +1,266 @@
+---
+layout: default
+---
+<style>
+    .videobg-header {
+        position: relative;
+        height: 80vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .videobg-header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        filter: grayscale();
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .videobg-header .page-header {
+        position: relative;
+        z-index: 2;
+    }
+
+    .videobg-header .pattern-overlay {
+        position: absolute;
+        background-image: linear-gradient(black 5%, transparent 40%);
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .videobg-header .shape {
+        filter: grayscale();
+    }
+
+
+    /* @media (pointer: coarse) and (hover: none) {
+        .videobg-header .pattern-overlay {
+            display: none;
+        }
+
+        .videobg-header video {
+            display: none;
+        }
+    }
+     */
+</style>
+<!-- Featured Image-->
+<div class="wrapper">
+    <div class="section section-hero section-shaped videobg-header">
+        <!-- Pattern Overlay Bg-->
+        <div class="pattern-overlay"></div>
+        <div class="shape shape-style-1 shape-primary">
+            <span class="span-150"></span>
+            <span class="span-50"></span>
+            <span class="span-50"></span>
+            <span class="span-75"></span>
+            <span class="span-100"></span>
+            <span class="span-75"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+        </div>
+        <!-- Video Bg-->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="metadata"
+            onloadeddata="document.querySelector('.videobg-header .pattern-overlay').style.opacity = 0.80;">
+            <source src="{{site.splash-videobg}}" type="video/mp4">
+        </video>
+
+        <div class="page-header">
+            <div class="container shape-container d-flex align-items-center py-lg">
+                <div class="col px-0">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <img loading="lazy" src="{{site.url}}/assets/img/brand/white.png" style="width: 300px;"
+                                class="img-fluid">
+                            <h2 class="display-2 font-weight-normal text-white">{{site.tagline}}</h2>
+                            <!-- <a href="#"
+                                    class="btn btn-lg btn-primary btn-icon mb-3 mb-sm-0">
+                                    <span class="btn-inner--icon"><i class="fa fa-play"></i></span>
+                                    <span class="btn-inner--text">Gallery</span>
+                                </a> -->
+                            <a href="https://www.typeform.com/templates/t/simple-registration/" class="btn btn-lg btn-warning btn-icon mb-3 mb-sm-0" target="_blank">
+                                <!-- <span class="btn-inner--text">Book</span> -->
+                                <span class="btn-inner--icon"><i class="fas fa-biking"></i></span>
+                                <span class="btn-inner--text">Test Drive</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator separator-bottom separator-skew" style="z-index: auto;">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+    <br /><br />
+</div>
+<!-- Basic Intro-->
+<div class="features-6">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="info info-horizontal info-hover-primary">
+            <div class="description">
+              <h3 class="display-3 title">Home Grown</h3>
+              <p>To make it suistainable, we grew every part of the ev-core in house</p>
+              <a href="/ark" class="text-info">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <img src="{{site.url}}/assets/starya/core_sketch.png" width="100%">
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Tabbed Animations-->
+<div class="section section-components">
+    <div class="container">
+        <div class="row justify-content-center" >
+          <div class="col-lg-12">
+            <div class="card shadow">
+              <div class="card-body" style="padding:unset;background-color: transparent;">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                        <div class="container" style="height: 100%; max-width: 100%; background-image: linear-gradient(black 35%, transparent 80%);">
+                            <img class="core-animation" src="{{site.url}}/assets/starya/coredna/core_dna_1.png" alt="bike animation" style=" width: 100%; max-height: 100%; display: block;margin: auto;" />
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                        <div class="container" style="height: 100%; max-width: 100%; background-image: linear-gradient(gray 20%, transparent 90%);">
+                            <img class="bike-animation" src="{{site.url}}/assets/starya/bikesketch/bike_sketch_1.png" alt="bike animation" style=" width: 100%; max-height: 100%; display: block;margin: auto;" />
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link mb-sm-3 mb-md-0 text-uppercase font-weight-bold" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="false"  onclick="coredna_frameNumber = 1;return requestAnimationFrame(coredna_step);">
+                          <i class="fas fa-tachometer-alt mr-2"></i>EV-Core</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-sm-3 mb-md-0 text-uppercase font-weight-bold" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false" onclick="bikesketch_frameNumber = 1;return requestAnimationFrame(bikesketch_step);">
+                        <i class="fas fa-wrench mr-2"></i>Upgrade</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{site.url}}/assets/js/plugins/jquery.appear.js" defer></script>
+<script>
+    // Coredna Animation
+    const coredna_imagePath = '{{site.url}}/assets/starya/coredna/';
+    const coredna_totalFrames = 20;
+    const coredna_animationDuration = 250;
+    const coredna_timePerFrame = coredna_animationDuration / coredna_totalFrames;
+    let coredna_timeWhenLastUpdate;
+    let coredna_timeFromLastUpdate;
+    let coredna_frameNumber = 1;
+
+    // 'step' function will be called each time browser rerender the content
+    // we achieve that by passing 'step' as a parameter to the 'requestAnimationFrame' function
+    function coredna_step(startTime) {
+        // 'startTime' is provided by requestAnimationName function, and we can consider it as current time
+        // first of all we calculate how much time has passed from the last time when frame was update
+        if (!coredna_timeWhenLastUpdate) coredna_timeWhenLastUpdate = startTime;
+        coredna_timeFromLastUpdate = startTime - coredna_timeWhenLastUpdate;
+
+        // then we check if it is time to update the frame
+        if (coredna_timeFromLastUpdate > coredna_timePerFrame) {
+            // and update it accordingly
+            $('.core-animation').attr('src', coredna_imagePath + `/core_dna_${coredna_frameNumber}.png`);
+            // reset the last update time
+            coredna_timeWhenLastUpdate = startTime;
+            // then increase the frame number or reset it if it is the last frame
+            if (coredna_frameNumber >= coredna_totalFrames) {
+               // coredna_frameNumber = 1;
+            } else {
+                coredna_frameNumber = coredna_frameNumber + 1;
+            }
+        }
+         requestAnimationFrame(coredna_step);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      (function($) {
+        for (var i = 1; i < coredna_totalFrames + 1; i++) {
+            $('body').append(`<div id="preload-coredna-image-${i}" style="background-image: url('${coredna_imagePath}/core_dna_${i}.png');"></div>`);
+        }
+      })(jQuery);
+    });
+
+
+    // Bikesketch Animation
+    const bikesketch_imagePath = '{{site.url}}/assets/starya/bikesketch/';
+    const bikesketch_totalFrames = 92;
+    const bikesketch_animationDuration = 4000;
+    const bikesketch_timePerFrame = bikesketch_animationDuration / bikesketch_totalFrames;
+    let bikesketch_timeWhenLastUpdate;
+    let bikesketch_timeFromLastUpdate;
+    let bikesketch_frameNumber = 1;
+
+    // 'step' function will be called each time browser rerender the content
+    // we achieve that by passing 'step' as a parameter to the 'requestAnimationFrame' function
+    function bikesketch_step(startTime) {
+        // 'startTime' is provided by requestAnimationName function, and we can consider it as current time
+        // first of all we calculate how much time has passed from the last time when frame was update
+        if (!bikesketch_timeWhenLastUpdate) bikesketch_timeWhenLastUpdate = startTime;
+        bikesketch_timeFromLastUpdate = startTime - bikesketch_timeWhenLastUpdate;
+
+        // then we check if it is time to update the frame
+        if (bikesketch_timeFromLastUpdate > bikesketch_timePerFrame) {
+            // and update it accordingly
+            $('.bike-animation').attr('src', bikesketch_imagePath + `/bike_sketch_${bikesketch_frameNumber}.png`);
+            // reset the last update time
+            bikesketch_timeWhenLastUpdate = startTime;
+            // then increase the frame number or reset it if it is the last frame
+            if (bikesketch_frameNumber >= bikesketch_totalFrames) {
+               // bikesketch_frameNumber = 1;
+            } else {
+                bikesketch_frameNumber = bikesketch_frameNumber + 1;
+            }
+        }
+         requestAnimationFrame(bikesketch_step);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      (function($) {
+        for (var i = 1; i < bikesketch_totalFrames + 1; i++) {
+            $('body').append(`<div id="preload-bikesketch-image-${i}" style="background-image: url('${bikesketch_imagePath}/bike_sketch_${i}.png');"></div>`);
+        }
+      })(jQuery);
+    });
+
+
+</script>
+
+{{content}}
+
+<!-- attribute authors-->
+

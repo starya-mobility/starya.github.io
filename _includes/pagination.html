@@ -1,0 +1,44 @@
+{% if paginator.total_pages > 1 %}
+
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    
+    {% capture pageinationprev %}{% unless paginator.previous_page %}disabled{% endunless %}{% endcapture %}
+    {% capture pageinationprev-style %}{% unless paginator.previous_page %}style="background-color: transparent;"{% endunless %}{% endcapture %}
+    <li class="page-item {{pageinationprev}}" >
+      <a class="page-link" {{pageinationprev-style}} href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+        tabindex="-1">
+        <i class="fa fa-angle-left"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <li class="page-item active">
+        <a class="page-link" href="#">{{ page }}<span class="sr-only">(current)</span></a>
+      </li>
+      {% elsif page == 1 %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}<span class="sr-only">{{ page }}</span></a>
+      </li>
+      {% else %}
+      <li class="page-item">
+        <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}<span class="sr-only">{{ page }}</span></a>
+      </li>
+      {% endif %}
+    {% endfor %}
+
+    {% capture pageinationnext %}{% unless paginator.next_page %}disabled{% endunless %}{% endcapture %}
+    {% capture pageinationnext-style %}{% unless paginator.next_page %}style="background-color: transparent;"{% endunless %}{% endcapture %}
+    <li class="page-item  {{pageinationnext}}" >
+      <a class="page-link" {{pageinationnext-style}} href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <i class="fa fa-angle-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+{% endif %}

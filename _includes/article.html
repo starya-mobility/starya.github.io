@@ -1,0 +1,25 @@
+<div class="py-4 text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <p class="lead text-muted">{{page.beforetoc}}</p>
+        </div>
+    </div>
+</div>
+<div class="px-5">
+    <!-- Toc if any -->
+    {% if page.toc %}
+    <div class="toc mt-4 mb-4 lead text-muted">
+        <h3 class="display-3 text-warning">Summary</h3>
+        {% include toc.html html=content %}
+    </div>
+    {% endif %}
+    <!-- End Toc -->
+
+    <div class="border-top">
+        <div class="mt-5 mb-5" style="min-height: 50vh;">
+            <!-- Content -->
+            {{content}}
+        </div>
+    </div>
+
+</div>

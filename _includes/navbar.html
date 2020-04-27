@@ -1,0 +1,65 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" href="/">
+      <img loading="lazy" src="{{site.logo}}">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+      aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a href="/">
+              <img loading="lazy" src="{{site.logo-alt}}">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+              aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto navbar-nav-hover">
+        {% if site.data.navitems[0] %}
+        {% for item in site.data.navitems %}
+        {% if item.subnav[0] %}
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-icon" data-toggle="dropdown" href="{{ item.url }}" role="button">
+            <i class="{{ item.fa-icon }}"></i>
+            <span class="nav-link-inner--text">{{ item.title }}</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-xl">
+            <div class="dropdown-menu-inner">
+              {% for subitem in item.subnav %}
+              <a href="{{ subitem.url }}" class="media d-flex align-items-center">
+                <div class="icon icon-shape rounded-circle text-white {{ subitem.fa-icon-bg }}">
+                  <i class="{{ subitem.fa-icon }}"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading {{ subitem.title-color }} mb-md-1">{{ subitem.title }}</h6>
+                  <p class="description d-none d-md-inline-block mb-0">{{ subitem.desc }}</p>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{ item.url }}" target="_self" data-toggle="tooltip" title="{{ item.toottip }}">
+            <i class="{{ item.fa-icon }}"></i>
+            <span class="nav-link-inner--text">{{ item.title }}</span>
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

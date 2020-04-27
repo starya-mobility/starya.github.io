@@ -1,0 +1,14 @@
+- title: Like Us
+  bg-class: btn-facebook
+  fa-icon: fab fa-facebook
+  url: https://www.facebook.com/staryamobility/
+- title: Follow Us
+  bg-class: btn-twitter
+  fa-icon: fab fa-twitter
+  url: https://twitter.com/staryamobility
+- title: Star on Github
+  bg-class: btn-github
+  fa-icon: fab fa-github
+  url: https://github.com/starya-mobility
+
+

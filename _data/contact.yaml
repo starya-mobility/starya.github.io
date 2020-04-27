@@ -1,0 +1,19 @@
+- title: Address
+  fa-icon: "fas fa-map-marked-alt"
+  url: "https://goo.gl/maps/yjZaH2zkBLBKvxCGA"
+  desc: "Nagarbhavi, Bengaluru"
+
+- title: Email
+  fa-icon: "fas fa-envelope"
+  url: "mailto:hello@starya.in"
+  desc: "hello@starya.in"
+
+- title: Phone
+  fa-icon: "fas fa-mobile-alt"
+  url: "tel:+91-78292-82519"
+  desc: "+91 78292 82519"
+
+- title: Contact
+  fa-icon: "fas fa-user-circle"
+  url: 
+  desc: "Ravi Kumar"

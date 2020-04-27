@@ -1,0 +1,30 @@
+---
+layout: default
+title: b{log}
+<!-- permalink: /blog/ Don't put permalink as it will break the paginator -->
+comments: false
+---
+<!-- Featured Image -->
+{% include featured-image.html %}
+<div class="wrapper">
+  <section class="section bg-secondary">
+    <div class="container">
+      <div class="card-profile row justify-content-center" style="margin-top:-40vh">
+        {% for post in paginator.posts %}
+        {% include postbox.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="section bg-secondary">
+    <div class="container">
+    <!-- Pagination -->
+    {% include pagination.html %}
+    </div>
+  </section>
+</div>
+
+{% if site.mailchimp-list %}
+<!-- Newsletter -->
+{% include newsletter.html %}
+{% endif %}

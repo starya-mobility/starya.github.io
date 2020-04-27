@@ -1,0 +1,27 @@
+{% if (page.author) %}
+<div class="row justify-content-center">
+    <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
+        <div class="card-profile-actions py-4 mt-lg-0">
+            <h6 class="category">March 1, 2019</h6>
+        </div>
+    </div>
+    <div class="col-lg-4 order-lg-1">
+        <div class="card-profile-stats d-flex justify-content-center">
+            {% if site.data.socialnet[0] %}
+            {% for item in site.data.socialnet %}
+            <section class="px-2">
+                <a target="_blank" href="{{item.url}}" rel="nofollow"
+                    class="btn btn-icon-only rounded-circle {{item.bg-class}}" data-toggle="tooltip"
+                    data-original-title="{{item.title}}">
+                    <span class="btn-inner--icon">
+                        <i class="{{item.fa-icon}}"></i>
+                    </span>
+                </a>
+            </section>
+            {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+{% endif %}

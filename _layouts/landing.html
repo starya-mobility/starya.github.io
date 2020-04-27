@@ -1,0 +1,266 @@
+---
+layout: default
+---
+<style>
+    .videobg-header {
+        position: relative;
+        height: 80vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .videobg-header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        filter: grayscale();
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .videobg-header .page-header {
+        position: relative;
+        z-index: 2;
+    }
+
+    .videobg-header .pattern-overlay {
+        position: absolute;
+        background-image: linear-gradient(black 5%, transparent 40%);
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .videobg-header .shape {
+        filter: grayscale();
+    }
+
+
+    /* @media (pointer: coarse) and (hover: none) {
+        .videobg-header .pattern-overlay {
+            display: none;
+        }
+
+        .videobg-header video {
+            display: none;
+        }
+    }
+     */
+</style>
+<!-- Featured Image-->
+<div class="wrapper">
+    <div class="section section-hero section-shaped videobg-header">
+        <!-- Pattern Overlay Bg-->
+        <div class="pattern-overlay"></div>
+        <div class="shape shape-style-1 shape-primary">
+            <span class="span-150"></span>
+            <span class="span-50"></span>
+            <span class="span-50"></span>
+            <span class="span-75"></span>
+            <span class="span-100"></span>
+            <span class="span-75"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+        </div>
+        <!-- Video Bg-->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata"
+            onloadeddata="document.querySelector('.videobg-header .pattern-overlay').style.opacity = 0.80;">
+            <source src="{{site.splash-videobg}}" type="video/mp4">
+        </video>
+        <script>
+            const video = document.querySelector('video');
+            video.onended = (event) => {
+                console.log('video complete');
+            };
+        </script>
+
+        <div class="page-header">
+            <div class="container shape-container d-flex align-items-center py-lg">
+                <div class="col px-0">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <img loading="lazy" src="{{site.url}}/assets/img/brand/white.png" style="width: 300px;"
+                                class="img-fluid">
+                            <h2 class="display-2 font-weight-normal text-white">{{site.tagline}}</h2>
+                            <!-- <a href="#"
+                                    class="btn btn-lg btn-primary btn-icon mb-3 mb-sm-0">
+                                    <span class="btn-inner--icon"><i class="fa fa-play"></i></span>
+                                    <span class="btn-inner--text">Gallery</span>
+                                </a> -->
+                            <a href="https://www.typeform.com/templates/t/simple-registration/"
+                                class="btn btn-lg btn-warning btn-icon mb-3 mb-sm-0" target="_blank">
+                                <!-- <span class="btn-inner--text">Book</span> -->
+                                <span class="btn-inner--icon"><i class="fas fa-biking"></i></span>
+                                <span class="btn-inner--text">Test Drive</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator separator-bottom separator-skew" style="z-index: auto;">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+    <br /><br />
+</div>
+
+
+
+<!-- Basic Intro-->
+<div class="features-6">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="info info-horizontal info-hover-primary">
+            <div class="description">
+              <h3 class="display-3 title">Home Grown</h3>
+              <p>To make it suistainable, we grew every part of the ev-core in house</p>
+              <label>Rated Motor Power</label>
+              <code>6kW / 10kW</code>
+              <br>
+              <label>Acceleration [0-40]</label>
+              <code>3.9s</code>
+              <br>
+              <label>Top Speed</label>
+              <code>75kmph</code>
+              <br>
+              <label>Mileage</label>
+              <code>75km / charge</code>
+              <br>
+              <label>Kerb Weight</label>
+              <code>105kg</code>
+              <br>
+              <a href="/ark" class="text-info">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+            <img src="{{site.url}}/assets/starya/core_sketch.png" width="100%">
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="{{site.url}}/assets/js/core/jquery.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/plugins/jquery.appear.js"></script>
+<!-- <script type="text/javascript" src="{{site.url}}/assets/js/plugins/ScrollMagic.min.js"></script> -->
+
+<div class="container py-5">
+        <div  id="homegrown" class="row align-items-center">
+            <div class="col-lg-9">
+                <div id="bikeimagesequence">
+                    <img style="width:100%" id="bikeimage" src="{{site.url}}/assets/starya/bikesketch/bike_sketch_1.png" onclick="resume_or_pause()"/><br>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="bike_img_trigger" data-appear-top-offset="-100"></div>
+                <div class="info info-horizontal info-hover-primary">
+                <div class="description">
+                    <h3 class="display-3 title">Upgrade</h3>
+                    <p>Agile Ride Kit (ARK), is a plug and play conversion kit that can convert any single suspension internal combustion engine scooter to electric.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+	<script>
+
+        // Bikesketch Animation
+        const bikesketch_imagePath = '{{site.url}}/assets/starya/bikesketch/';
+        const bikesketch_totalFrames = 92;
+        const bikesketch_animationDuration = 8000;
+        const bikesketch_timePerFrame = bikesketch_animationDuration / bikesketch_totalFrames;
+        let bikesketch_timeWhenLastUpdate;
+        let bikesketch_timeFromLastUpdate;
+        let bikesketch_frameNumber = 1;
+        let bikesketch_animate = 0; // 0 stop, 1 forward, -1 reverse
+
+        // 'step' function will be called each time browser rerender the content
+        // we achieve that by passing 'step' as a parameter to the 'requestAnimationFrame' function
+        function bikesketch_step(startTime) {
+            // 'startTime' is provided by requestAnimationName function, and we can consider it as current time
+            // first of all we calculate how much time has passed from the last time when frame was update
+            if (!bikesketch_timeWhenLastUpdate) bikesketch_timeWhenLastUpdate = startTime;
+            bikesketch_timeFromLastUpdate = startTime - bikesketch_timeWhenLastUpdate;
+
+            // then we check if it is time to update the frame
+            if (bikesketch_timeFromLastUpdate > bikesketch_timePerFrame) {
+                // and update it accordingly
+                $('#bikeimage').attr('src', bikesketch_imagePath + `/bike_sketch_${bikesketch_frameNumber}.png`);
+                // reset the last update time
+                bikesketch_timeWhenLastUpdate = startTime;
+                // then increase the frame number or reset it if it is the last frame
+                if(bikesketch_animate == 1){
+                    if (bikesketch_frameNumber >= bikesketch_totalFrames) {
+                    // bikesketch_frameNumber = 1;
+                    } else {
+                        bikesketch_frameNumber = bikesketch_frameNumber + 1;
+                    }
+                }
+                // if(bikesketch_animate == -1){
+                //     if (bikesketch_frameNumber <= 1) {
+                //     // bikesketch_frameNumber = 1;
+                //     } else {
+                //         bikesketch_frameNumber = bikesketch_frameNumber - 1;
+                //     }
+                // }
+            }
+            requestAnimationFrame(bikesketch_step);
+        }
+
+        function resume_or_pause(){
+            if(bikesketch_frameNumber != bikesketch_totalFrames){
+                bikesketch_animate == 0
+            }
+            else{
+                bikesketch_animate == 1
+            }
+        }
+
+
+           
+        window.addEventListener('DOMContentLoaded', function() {
+            (function($) {
+                for (var i = 1; i < bikesketch_totalFrames + 1; i++) {
+                    $('body').append(`<div id="preload-bikesketch-image-${i}" style="background-image: url('${bikesketch_imagePath}/bike_sketch_${i}.png');"></div>`);
+                }
+                bikesketch_animate = 0;requestAnimationFrame(bikesketch_step);
+            })(jQuery);
+        });
+
+        $('#bike_img_trigger').appear();
+
+        $('#bike_img_trigger').on('appear', function(event, $all_appeared_elements) {
+            bikesketch_animate = 1; 
+            // this element is now inside browser viewport
+        });
+        $('#bike_img_trigger').on('disappear', function(event, $all_disappeared_elements) {
+            bikesketch_frameNumber = 1;
+            bikesketch_animate = 0;
+            // this element is now outside browser viewport
+        });
+
+
+    </script>
+</div>
+
+

@@ -1,0 +1,36 @@
+<div class="contactus">
+  <div class="container pt-5">
+    <div class="row border-top pt-5">
+      <div class="col-md-12 text-center mb-5">
+        <h1 class="display-1">Question?</h1>
+        <h3 class="lead">Get in touch with us to know more</h3>
+        <button class="btn btn-icon btn-primary mt-3 disabled" type="button">
+          <span class="btn-inner--icon">
+            <i class="fas fa-comments"></i>
+          </span>
+          <span class="btn-inner--text">Chat with us</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      {% if site.data.contact[0] %}
+      {% for item in site.data.contact %}
+      <div class="col-lg-3 col-md-6 col-6">
+        <a class="stretched-link text-decoration-none" href="{{item.url}}" target="_self"></a>
+        <div class="info">
+          <div class="icon icon-shape icon-shape-primary icon-lg shadow rounded-circle text-primary">
+            <i class="{{item.fa-icon}}"></i>
+          </div>
+          <h4 class="info-title">{{item.title}}</h4>
+          <p class="description px-0">{{item.desc}}</p>
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+  
