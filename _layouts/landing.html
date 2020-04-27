@@ -18,7 +18,7 @@ layout: default
         min-height: 100%;
         width: auto;
         height: auto;
-        filter: grayscale();
+        /* filter: grayscale(); */
         z-index: 0;
         -ms-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
@@ -79,6 +79,8 @@ layout: default
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata"
             onloadeddata="document.querySelector('.videobg-header .pattern-overlay').style.opacity = 0.80;">
             <source src="{{site.splash-videobg}}" type="video/mp4">
+            <!-- <source src="https://res.cloudinary.com/gowrav/video/upload/v1587997357/starya_splash_oqqrjd.mp4" type="video/mp4"> -->
+                    
         </video>
         <script>
             const video = document.querySelector('video');
