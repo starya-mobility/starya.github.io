@@ -1,7 +1,7 @@
 {% if (page.author) %}
 <div class="row justify-content-center">
-    <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-        <div class="card-profile-actions py-4 mt-lg-0">
+    <div class="col-lg-4 order-lg-1 text-lg-right align-self-lg-center">
+        <div class="card-profile-actions mt-lg-0" style="margin: unset;">
             <h6 class="category">
                 <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
                 {% if page.last_modified_at %}
@@ -10,7 +10,10 @@
             </h6>
         </div>
     </div>
-    <div class="col-lg-4 order-lg-1">
+    <div class="col-lg-4 order-lg-2 align-self-lg-center">
+        <h5 style="text-align: center;">{{ author.name }}</h5>
+    </div>
+    <div class="col-lg-4 order-lg-2">
         <div class="card-profile-stats d-flex justify-content-center">
             {% if site.data.socialnet[0] %}
             {% for item in site.data.socialnet %}
@@ -30,5 +33,4 @@
         </div>
     </div>
 </div>
-<h5 style="text-align: center;">{{ author.name }}</h5>
 {% endif %}
