@@ -1,14 +1,14 @@
 # Site
 # name: "Starya Mobility"
 title: "Starya Mobility" # the name of your site, e.g. ACME Corp.
-description: ""
+description: "a startup for EV"
 tagline: "Future is Here!"
 url: "https://starya.in" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /home /blog
 logo: 'https://starya.in/assets/img/brand/white.png'
 logo-alt: 'https://starya.in/assets/img/brand/orange.png'
 favicon-folder: 'https://starya.in/assets/img/favicon'
-splash-videobg: 'https://res.cloudinary.com/gowrav/video/upload/v1587997357/Gallery%20Starya/starya_splash_oqqrjd.mp4
+splash-videobg: 'https://res.cloudinary.com/gowrav/video/upload/v1587997357/Gallery%20Starya/starya_splash_oqqrjd.mp4'
 googleapis_KEY: 'AIzaSyBgPPCxfvGYCznsH_Pp6DLRjBjcjykUdVI'
 # google_analytics: 'UA-xxxxxxxx-1'
 # disqus: 'demowebsite'
