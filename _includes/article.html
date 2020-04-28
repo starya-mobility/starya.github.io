@@ -5,23 +5,24 @@
         </div>
     </div>
 </div>
-<div class="px-5">
-    <!-- Toc if any -->
-    {% if page.toc %}
-    <div class="toc mt-4 mb-4 lead text-muted">
-        <h3 class="display-3 text-warning">Summary</h3>
-        {% include toc.html html=content %}
-    </div>
-    {% endif %}
-    <!-- End Toc -->
+<div class="row justify-content-center">
+    <div class="col-lg-10 px-4">
+        <!-- Toc if any -->
+        {% if page.toc %}
+        <div class="toc mt-4 mb-4 lead text-muted">
+            <h3 class="display-3 text-warning">Summary</h3>
+            {% include toc.html html=content %}
+        </div>
+        {% endif %}
+        <!-- End Toc -->
 
-    <!-- Main Content -->
-    <div class="border-top">
-        <div class="mt-5 mb-5" style="min-height: 50vh;">
-            {{ content }}
+        <!-- Main Content -->
+        <div class="border-top">
+            <div class="mt-5 mb-5" style="min-height: 50vh;">
+                {{ content }}
+            </div>
         </div>
     </div>
-
 </div>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
