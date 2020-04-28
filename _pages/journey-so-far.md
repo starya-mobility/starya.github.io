@@ -7,13 +7,14 @@ author: jrk
 categories: 
 tags: 
 comments: false
-image: 
-excerpt: "Everybody wants a happy ending. Right? But it doesn't always roll that way. Maybe this time. I'm hoping if you play this back, it's in celebration. I hope families are reunited, I hope we get it back and something like a normal version of the planet has been restored, if there ever was such a thing. God, what a world. Universe, now. If you told me ten years ago that we weren't alone, let alone, you know, to this extent, I mean, I wouldn't have been surprised, but come on. The epic forces of dark and light that have come in to play. And for better or worse, that's the reality Morgan's gonna have to find a way to grow up in. So I thought I better record a little greeting, in the case of an untimely death, on my part. I mean, not that death at any time isn't untimely. This time travel thing we're gonna try and pull off tomorrow, it's got me scratching my head about the survivability of it all. Then again that's the hero gig. Part of the journey is the end. What am I even tripping for? Everything's gonna workout exactly the way it's supposed to. "
-beforetoc: ""
+image: https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Team_Starya_at_MSRIT_Lab_i45qje.jpg
+excerpt: "To start the process of Design &amp; development of a 6.5 Kw Liquid cooled PMSM motor with a continuous torque of 30 Nm run by a F.O.C based 250 A sinusoidal controller that would accelerate a 108 Kg kerb weight vehicle from 0-40 in 3.5 S with a top speed of 75Km/Hr. The unit would be powered by a 2.1 Kwh swappable battery Pack giving a realistic mileage of around 73Km/Swap."
+beforetoc: "<blockquote class='blockquote'><p class='mb-0'>We are what we repeatedly do. Excellence, then, is not an act but a habit.</p><footer class='blockquote-footer'>Aristotle</footer> </blockquote>"
 toc: false
 ---
-
 {% assign sortedposts = site.posts | reverse %}
 {% for post in sortedposts %}
+<div class="pb-5">
 {{ post.content }} 
+</div>
 {% endfor %}

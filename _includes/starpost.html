@@ -4,8 +4,8 @@
   {% assign author = site.authors[page.author] %}
   <div class="card card-lift--hover shadow border-0">
     <a class="card-block stretched-link text-decoration-none" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></a>
-    <div class="card-header bg-info" style="height: 30vh; padding: unset; margin: 3px; background-color: #8b32f7 !important; position: relative;">
-      <div style="position: absolute; height: 30vh; width: 100%; overflow: hidden;filter: opacity(0.2) brightness(0.4);">
+    <div class="card-header bg-info" style="height: 40vh; padding: unset; margin: 3px; background-color: #8b32f7 !important; position: relative;">
+      <div style="position: absolute; height: 40vh; width: 100%; overflow: hidden;filter: opacity(0.2) brightness(0.4);">
         <img src="{{ post.image }}" style="position: relative;width: 100%;">
       </div>
       <div class="card-avatar" style="position: absolute; padding-left: 50%;margin: -2rem;">
@@ -17,11 +17,11 @@
           {% endif %}
         </a>
       </div>
-      <h3 class="display-3 text-white py-5" style="position: relative;text-align: center;margin: revert;">{{ post.title | strip_html | truncatewords:5 }}</h3>
+      <h2 class="display-2 text-white py-5" style="position: relative;text-align: center;margin: revert;">{{ post.title | strip_html | truncatewords:5 }}</h2>
     </div>
     <div class="card-body" style="padding-left: 2.5rem;padding-right: 2.5rem;">
-      <div class="row" style="height: 50vh;overflow: hidden;">
-      <p class="description justify-content">{{ post.excerpt | strip_html | truncatewords:300 }}</p>
+      <div class="row" style="height: 30vh;overflow: hidden;">
+      <p>{{ post.excerpt | strip_html | truncatewords:300 }}</p>
       </div>
       <div class="row justify-content-end px-3">
       <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->

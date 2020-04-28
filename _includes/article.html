@@ -15,11 +15,22 @@
     {% endif %}
     <!-- End Toc -->
 
+    <!-- Main Content -->
     <div class="border-top">
         <div class="mt-5 mb-5" style="min-height: 50vh;">
-            <!-- Content -->
-            {{content}}
+            {{ content }}
         </div>
     </div>
 
 </div>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+    $( 'p img' ).each(function( index ) {
+        imgsrc = $(this).src;
+        imgtitle = $(this).title;
+        imgalt = $(this).alt;
+
+        $(this).replaceWith('<div class="card shadow border-0 article-img-holder" style="background-color:whitesmoke !important;"><div class="card-header bg-info" style="height: 30rem; padding: unset; margin: 3px;background-color:transparent !important;"><div style="position: relative;height: 15rem;min-height: 30rem;width: 100%;overflow: hidden;left: 0 !important;"><a class="stretched-link text-decoration-none" href="'+ $(this)[0].src +'" data-lightbox="gallery-set" data-title="'+ $(this)[0].title +'"><img alt="'+ $(this)[0].title +'" title="'+ $(this)[0].alt +'" style="position: absolute;top: 50%;left: 50%;min-width: 100%; z-index: 0;-ms-transform: translateX(-50%) translateY(-50%);-moz-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);" src="'+ $(this)[0].src +'" ></a></div></div></div> ' );
+    });
+});
+</script>
