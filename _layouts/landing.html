@@ -19,7 +19,6 @@ layout: default
         width: auto;
         height: auto;
         /* filter: grayscale(); */
-        z-index: 0;
         -ms-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
@@ -37,7 +36,7 @@ layout: default
         top: 0;
         left: 0;
         height: 100%;
-        opacity: 0;
+        opacity: 0.8;
         width: 100%;
         z-index: 1;
     }
@@ -102,7 +101,7 @@ layout: default
             <span class="span-100"></span>
         </div>
         <!-- Video Bg -->
-        <video id="vid" preload="metadata" muted autoplay  onloadeddata="document.querySelector('.videobg-header .pattern-overlay').style.opacity = 0.80;"></video>
+        <video id="vid" preload="metadata" muted autoplay ></video>
             <!-- <source src="{{site.splash-videobg}}" type="video/mp4"> -->
             <!-- <p>Your browser doesn't support the HTML5 video tag it seems.</p> -->
         <script>

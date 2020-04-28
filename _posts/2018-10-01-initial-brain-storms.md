@@ -8,7 +8,6 @@ image:
 description: 
 rating: 
 ---
-
 #### May 2018:
 After a preliminary research into the two wheeler EV segment, a lack of expertise in the powertrain &amp; BMS segment was evident. All players were importing the “heart” of an EV and assembling.
 

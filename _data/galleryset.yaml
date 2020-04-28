@@ -8,11 +8,6 @@
   format: "jpg"
   type: "image"
 
-- title: "App_Preview"
-  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/App_Preview_avrgmr.jpg"
-  format: "jpg"
-  type: "image"
-
 - title: "Felicitation_at_Altair_with_Startup_India"
   url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Felicitation_at_Altair_with_Startup_India_ztoofi.jpg"
   format: "jpg"
@@ -21,11 +16,6 @@
 - title: "Shiny_Body"
   url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/Shiny_Body_tmhab0.jpg"
   format: "jpg"
-  type: "image"
-
-- title: "Peak_Power_Achieved_with_Proto_1"
-  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Peak_Power_Achieved_with_Proto_1_teb4an.png"
-  format: "png"
   type: "image"
 
 - title: "Ravi_introducing_ARK_at_Shrunga_Expo"
@@ -247,3 +237,13 @@
   url: "https://res.cloudinary.com/gowrav/video/upload/v1588002187/Gallery%20Starya/Current_to_Speed_Loop_Switch_Over_xacvyq.mp4"
   format: "mp4"
   type: "video"
+
+- title: "App_Preview"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002216/Gallery%20Starya/App_Preview_avrgmr.jpg"
+  format: "jpg"
+  type: "image"
+
+- title: "Peak_Power_Achieved_with_Proto_1"
+  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002215/Gallery%20Starya/Peak_Power_Achieved_with_Proto_1_teb4an.png"
+  format: "png"
+  type: "image"

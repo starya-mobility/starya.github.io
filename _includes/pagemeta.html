@@ -2,26 +2,33 @@
 <div class="row justify-content-center">
     <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
         <div class="card-profile-actions py-4 mt-lg-0">
-            <h6 class="category">March 1, 2019</h6>
+            <h6 class="category">
+                <time datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+            </h6>
         </div>
     </div>
     <div class="col-lg-4 order-lg-1">
         <div class="card-profile-stats d-flex justify-content-center">
             {% if site.data.socialnet[0] %}
             {% for item in site.data.socialnet %}
+            {% if item.share-link %}
             <section class="px-2">
-                <a target="_blank" href="{{item.url}}" rel="nofollow"
-                    class="btn btn-icon-only rounded-circle {{item.bg-class}}" data-toggle="tooltip"
+                <a target="_blank" href="{{item.share-link}}{{ page.url | absolute_url }}" onclick="window.open(this.href, 'share', 'width=550,height=435');return false;" class="btn btn-icon-only rounded-circle {{item.bg-class}}" data-toggle="tooltip"
                     data-original-title="{{item.title}}">
                     <span class="btn-inner--icon">
                         <i class="{{item.fa-icon}}"></i>
                     </span>
                 </a>
             </section>
+            {% endif %}
             {% endfor %}
             {% endif %}
 
         </div>
     </div>
 </div>
+<h5 style="text-align: center;">{{ author.name }}</h5>
 {% endif %}

@@ -8,8 +8,6 @@ image:
 description: 
 rating: 
 ---
-
-
 #### October 2018:
 It is always a surreal feeling to lay hands on the core building blocks of the core unit of the EV. It was almost after 4 months of design and simulation and development of dies and fixtures that the raw materials like the stator laminations/Magnets/motor body/motor shaft began to arrive one after the other ready to be assembled and tested. Any major change in system design was pretty much next to impossible at this point of time.
 

@@ -1,33 +1,31 @@
-<!-- begin post -->
 {% assign author = site.authors[post.author] %}
-<div class="col-lg-4 mt-5">
-  <div class="card card-lift--hover shadow border-0">
-    <a class="card-block stretched-link text-decoration-none" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></a>
-    <div class="card-header bg-info" style="height: 7rem; padding: unset; margin: 3px; background-color: #32acf7 !important; position: relative;">
-      <div style="position: absolute; height: 7rem; width: 100%; overflow: hidden;filter: opacity(0.2) brightness(0.4);">
-        <img src="{{ post.image }}" style="position: relative;width: 100%;">
-      </div>
-      <div class="card-avatar" style="position: absolute; padding-left: 50%;margin: -2rem;">
-        <a class="avatar avatar-lg rounded-circle img-fluid rounded-circle shadow-lg" data-original-title="{{ author.display_name }}">
-          {% if author.avatar %}
-          <img alt="Image placeholder" src="{{ site.url }}/{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}" style="padding: 3px;background-color: #32acf7;">
-          {% else %}
-          <img alt="Image placeholder" src="https://www.gravatar.com/avatar/{{ author.gravatar }}" alt="{{ author.display_name }}" style="padding: 3px;background-color: #32acf7;">
-          {% endif %}
-        </a>
-      </div>
-      <h4 class="display-4 text-white" style="position: relative;text-align: center;margin: revert;">{{ post.title | strip_html | truncatewords:5 }}</h4>
+<!-- begin post -->
+<div class="card card-lift--hover shadow border-0">
+  <a class="card-block stretched-link text-decoration-none" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></a>
+  <div class="card-header bg-info" style="height: 7rem; padding: unset; margin: 3px; background-color: #32acf7 !important; position: relative;">
+    <div style="position: absolute; height: 7rem; width: 100%; overflow: hidden;filter: opacity(0.2) brightness(0.4);">
+      <img src="{{ post.image }}" style="position: relative;width: 100%;">
     </div>
-    <div class="card-body" style="padding-left: 2.5rem;padding-right: 2.5rem;">
-      <div class="row" style="max-height: 9rem;overflow: hidden;">
-      <p class="description justify-content">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
-      </div>
-      <div class="row justify-content-end px-3">
-      <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
-      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="btn btn-sm btn-link text-secondary btn-outline-secondary disabled"><span class="btn-inner--text" style=" text-transform:none;">More</span><i class="fas fa-angle-right"></i></a>
-      </div>
+    <div class="card-avatar" style="position: absolute; padding-left: 50%;margin: -2rem;">
+      <a class="avatar avatar-lg rounded-circle img-fluid rounded-circle shadow-lg" data-original-title="{{ author.display_name }}">
+        {% if author.avatar %}
+        <img alt="Image placeholder" src="{{ site.url }}/{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}" style="padding: 3px;background-color: #32acf7;">
+        {% else %}
+        <img alt="Image placeholder" src="https://www.gravatar.com/avatar/{{ author.gravatar }}" alt="{{ author.display_name }}" style="padding: 3px;background-color: #32acf7;">
+        {% endif %}
+      </a>
+    </div>
+    <h4 class="display-4 text-white" style="position: relative;text-align: center;margin: revert;">{{ post.title | strip_html | truncatewords:5 }}</h4>
+  </div>
+  <div class="card-body" style="padding-left: 2.5rem;padding-right: 2.5rem;">
+    <div class="row" style="max-height: 9rem;overflow: hidden;">
+    <p class="description justify-content">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+    </div>
+    <div class="row justify-content-end px-3">
+    <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
+    <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="btn btn-sm btn-link text-secondary btn-outline-secondary disabled"><span class="btn-inner--text" style=" text-transform:none;">More</span><i class="fas fa-angle-right"></i></a>
     </div>
   </div>
-</div> 
+</div>
 <!-- end post -->

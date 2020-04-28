@@ -24,11 +24,20 @@ authors:
     name: Gowrav
     display_name: GL
     gravatar: fa1f2ec20f82eeee44e44fd850a1ad62
-    email: gowrav.hassan@gmail.com
+    email: gowrav@starya.in
     web: https://gowrav.com/about
     twitter: 
     description: ""
-    
+
+  jrk:
+    name: Ravi Kumar
+    display_name: JRK
+    gravatar: 
+    email: ravi@starya.in
+    web: 
+    twitter: 
+    description: ""
+
 # Plugins
 plugins:
   - jekyll-paginate

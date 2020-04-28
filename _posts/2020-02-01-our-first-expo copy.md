@@ -8,7 +8,6 @@ image:
 description: 
 rating: 
 ---
-
 #### February 2020:
 Based on the traction gained by the article published and due to strong request from the direct consumers interested in converting their bikes to electric, Vijay Karnataka team gave us a stall to showcase our product for the very first time to the public.
 

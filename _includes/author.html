@@ -3,7 +3,7 @@
     <div class="col-lg-3 order-lg-2">
         <div class="card-profile-image" style="margin-top: -1.5rem; ">
             <a href="javascript:;">
-                {% assign author = site.authors[post.author] %}
+                {% assign author = site.authors[page.author] %}
                 {% if author.avatar %}
                 <img  src="{{ site.url }}/{{site.baseurl}}/{{ author.avatar }}"  class="rounded-circle img-fluid shadow-lg" style="width: 100px;padding: 3px; background-color: #32acf7;" alt="{{ author.display_name }}">
                 {% else %}
@@ -13,4 +13,5 @@
         </div>
     </div>
 </div>
+
 {% endif %}

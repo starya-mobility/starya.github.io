@@ -8,7 +8,6 @@ image:
 description: 
 rating: 
 ---
-
 #### December 2019:
 Anyone with a little exposure into electronic speed controller design will tell you there is no middle ground here. It either works or burns! This would mean a 1000 different combinations need to be working perfectly every second of operation and any mistake does not slow or reduce the efficiency of the bike, it just halts it, period.
 

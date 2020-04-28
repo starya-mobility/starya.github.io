@@ -18,3 +18,13 @@ blockquote{
     border-radius: .25rem;
     transition: all .5s;
 }
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}

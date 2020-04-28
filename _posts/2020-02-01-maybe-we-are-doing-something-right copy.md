@@ -8,7 +8,6 @@ image:
 description: 
 rating: 
 ---
-
 #### January 2020:
 Altair India had whipped up “the most innovative” start-up award back in August2019 in association with the Government of India to identify a technology based start-upwith the most innovative idea that had gained some sort of traction. We had applied for thesame and were thrilled to be a part of the challenge. The whole process was very organicwith our growth happening in parallel with the different stages of the competition. Well,what do you know, on January 31 st we were awarded the top spot by Altair and the start-upIndia body. Our sincere thanks to both Altair and the Indian government for understandingthe importance of identifying &amp; encouraging new innovative ideas.
 
