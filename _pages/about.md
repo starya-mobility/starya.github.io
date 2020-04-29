@@ -2,7 +2,7 @@
 layout: page
 title: About Us
 permalink: /about
-author: gl
+author: 
 categories: 
 tags: 
 comments: false
