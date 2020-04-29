@@ -1,7 +1,7 @@
 <!-- begin star post -->
 {% for post in site.pages %}
   {% if post.permalink: == '/journey-so-far'    %}
-  {% assign author = site.authors[page.author] %}
+  {% assign author = site.authors[post.author] %}
   <div class="card card-lift--hover shadow border-0">
     <a class="card-block stretched-link text-decoration-none" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></a>
     <div class="card-header bg-info" style="height: 40vh; padding: unset; margin: 3px; background-color: #8b32f7 !important; position: relative;">
