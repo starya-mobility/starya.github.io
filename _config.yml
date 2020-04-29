@@ -32,7 +32,8 @@ authors:
   jrk:
     name: Ravi Kumar
     display_name: JRK
-    gravatar: 00000000000000000000000000000000?d=http://starya.in/assets/starya/avatar/ravi_avatar.png
+    # avatar: /assets/starya/avatar/ravi_avatar.png
+    gravatar: 
     email: ravi@starya.in
     web: 
     twitter: 
