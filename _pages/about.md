@@ -6,7 +6,7 @@ author:
 categories: 
 tags: 
 comments: false
-image: https://starya.in/assets/img/faces/allstar.jpg
+image: https://res.cloudinary.com/gowrav/image/upload/v1588158999/Gallery%20Starya/Team_Starya_at_MSRIT_Lab_mod_puyv7x.png
 beforetoc: "<blockquote class='blockquote'><p class='mb-0'><b>TeamWork</b> is the fuel that allows common people to attain uncommon results.</p><footer class='blockquote-footer'>Andrew Carnegie</footer> </blockquote>"
 toc: false
 ---
