@@ -53,7 +53,9 @@
   </script> -->
   {% endif %}
 
+  <!-- Cookie Consent -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 {% capture body-class %}{% if page.layout == 'landing' %}landing-page{% else %}profile-page{% endif %}{% endcapture %}
@@ -133,7 +135,7 @@
       }
     },
     "content": {
-      "href": "starya.in/cookiepolicy"
+      "href": "{{site.url}}/cookiepolicy"
     }
   });
   </script>
