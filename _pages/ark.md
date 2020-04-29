@@ -93,7 +93,7 @@ toc: false
                         <code>Carbon Fiber</code>
                         <br>
                         <label>Peak Torque</label>
-                        <code>120Nm+</code>
+                        <code>120Nm+ [Consistent]</code>
                         <br>
                         <label>Peak Speed</label>
                         <code>75kmph</code>
