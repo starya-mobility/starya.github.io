@@ -155,202 +155,206 @@ toc: false
 								<script src="{{site.url}}/assets/3js/renderers/Projector.js"></script>
 								<script>
 									var canvas,tooltip,modalpreview, controls, camera, scene, renderer, core, pickHelper;
-									                                    var pickPosition = {x: 0, y: 0};
-									                                    function init() {
-									                                        canvas = document.querySelector('#corecontainer');
-									                                        tooltip = document.querySelector('#tooltip');
-									                                        modalpreview = document.querySelector('#modalpreview');
-									                                        renderer = new THREE.WebGLRenderer({canvas:canvas,alpha: true});
-									                                        renderer.setClearColor( 0x000000, 0 ); // the default
-									                                        scene = new THREE.Scene();
-									                                        scene.background = new THREE.Color('white');
-									                                        const fov = 45;
-									                                        const aspect = 2;  // the canvas default
-									                                        const near = 0.1;
-									                                        const far = 100;
-									                                        camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-									                                        camera.position.set( 0.6, 0.1, 0.4 );
-									                                        camera.lookAt( 0,0,0);
-									                                        {
-									                                            var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
-									                                            scene.add( ambientLight );
-									                                            const color = 0xFFFFFF;
-									                                            const intensity = 0.8;
-									                                            var directionalLight = new THREE.DirectionalLight( color, intensity );
-									                                            directionalLight.position.set( 1, 1, 0 ).normalize();
-									                                            scene.add( directionalLight );
-									                                        }
-									                                        // interferese with raycaster
-									                                        // var axesHelper = new THREE.AxesHelper( 5 );
-									                                        // scene.add( axesHelper );
-									                                        // CONTROLS
-									                                        controls = new THREE.OrbitControls( camera, renderer.domElement );
-									                                        controls.autoRotate = true;
-									                                        controls.enableZoom  = false;
-									                                        controls.enablePan  = false;
-									                                        controls.enableRotate  = false;
-									                                        controls.maxDistance  = 1.0;
-									                                        controls.minDistance  = 0.6;
-									                                        // controls.target  = new THREE.Vector3(0.38, 0.2, -0.16 );
-									                                        controls.target  = new THREE.Vector3(0,0,0 );
-									                                        // loading manager
-									                                        var loadingManager = new THREE.LoadingManager( function () {
-									                                            scene.add( core );
-									                                            var motor = new THREE.Mesh( new THREE.CylinderGeometry( 0.1, 0.1,0.25, 32 ), new THREE.MeshLambertMaterial( { color: 0x0000ff,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            motor.position.set(-0.11,0,0);
-									                                            motor.rotation.x = Math.PI / 2;
-									                                            motor.name = "motor";
-									                                            scene.add( motor );
-									                                            var controller = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.08,0.18 ), new THREE.MeshLambertMaterial( { color: 0x451903,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            controller.position.set(-0.4,-0.01,0);
-									                                            controller.name = "controller";
-									                                            scene.add( controller );
-									                                            var radiator = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.14,0.3 ), new THREE.MeshLambertMaterial( { color: 0x000023,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            radiator.position.set(-0.27,-0.03,0);
-									                                            radiator.name = "radiator";
-									                                            scene.add( radiator );
-									                                            var pulley1 = new THREE.Mesh( new THREE.CylinderGeometry( 0.1, 0.1,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            pulley1.position.set(0.22,-0.015,0.15);
-									                                            pulley1.rotation.x = Math.PI / 2;
-									                                            pulley1.name = "powertrain";
-									                                            scene.add( pulley1 );
-									                                            var pulley2 = new THREE.Mesh( new THREE.CylinderGeometry( 0.05, 0.05,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            pulley2.position.set(-0.11,-0.014,0.16);
-									                                            pulley2.rotation.x = Math.PI / 2;
-									                                            pulley2.name = "powertrain";
-									                                            scene.add( pulley2 );
-									                                        } );
-									                                        // collada
-									                                        var loader = new THREE.ColladaLoader( loadingManager );
-									                                        loader.load( '{{site.url}}/assets/starya/core.dae', function ( collada ) {
-									                                            core = collada.scene;
-									                                            // when the mouse moves, call the given function
-									                                            window.addEventListener('mousemove', setPickPosition);
-									                                            window.addEventListener('mouseout', clearPickPosition);
-									                                            window.addEventListener('mouseleave', clearPickPosition);
-									                                            window.addEventListener('touchstart', (event) => {
-									                                                // prevent the window from scrolling
-									                                                //    event.preventDefault();
-									                                                    setPickPosition(event.touches[0]);
-									                                                }, {passive: false}
-									                                            );
-									                                            window.addEventListener('touchmove', (event) => {
-									                                                setPickPosition(event.touches[0]);
-									                                            });
-									                                            window.addEventListener('touchend', clearPickPosition);
-									                                            clearPickPosition();
-									                                            requestAnimationFrame(render);
-									                                            pickHelper = new PickHelper();
-									                                        } );
-									                                    }
-									                                    var openmodal = function (modal) {
-									                                            $("#modal-motor").modal("hide")
-									                                            $("#modal-controller").modal("hide")
-									                                            $("#modal-powertrain").modal("hide")
-									                                            $("#modal-cooling").modal("hide")
-									                                            switch(modal){
-									                                                case 'motor'      :  $("#modal-motor").modal("show");break;
-									                                                case 'controller' :  $("#modal-controller").modal("show");break;
-									                                                case 'powertrain'     :  $("#modal-powertrain").modal("show");break;
-									                                                case 'radiator'    :  $("#modal-cooling").modal("show");break;
-									                                            }
-									                                        };
-									                                    var prepmodal = null;
-									                                    class PickHelper {
-									                                    constructor() {
-									                                        this.raycaster = new THREE.Raycaster();
-									                                        this.pickedObject = null;
-									                                        this.pickedObjectSavedColor = 0;
-									                                    }
-									                                    pick(normalizedPosition, scene, camera, time) {
-									                                            // // restore the color if there is a picked object
-									                                            if (this.pickedObject) {
-									                                            this.pickedObject.material.emissive.setHex(this.pickedObjectSavedColor);
-									                                            this.pickedObject = undefined;
-									                                            }
-									                                            // cast a ray through the frustum
-									                                            this.raycaster.setFromCamera(normalizedPosition, camera);
-									                                            // get the list of objects the ray intersected
-									                                            const intersectedObjects = this.raycaster.intersectObjects(scene.children);
-									                                            if (intersectedObjects.length) {
-									                                                // pick the first object. It's the closest one
-									                                                this.pickedObject = intersectedObjects[0].object;
-									                                                // if holding on to the same then popup modal
-									                                                if(tooltip.innerHTML == this.pickedObject.name){
-									                                                    if(prepmodal == null)
-									                                                        prepmodal = setTimeout(openmodal, 1000, this.pickedObject.name);
-									                                                }else{
-									                                                    // stop modal
-									                                                    if(prepmodal != null)
-									                                                        clearTimeout(prepmodal);
-									                                                    prepmodal = null;
-									                                                }
-									                                                tooltip.innerHTML = this.pickedObject.name;
-									                                                tooltip.style.visibility = 'visible';
-									                                                modalpreview.style.visibility = 'visible'
-									                                                // save its color
-									                                                this.pickedObjectSavedColor = this.pickedObject.material.emissive.getHex();
-									                                                // set its emissive color to flashing red/yellow
-									                                                this.pickedObject.material.emissive.setHex((time * 8) % 2 > 1 ? 0xFFFF00 : 0xFF0000);
-									                                            }else{
-									                                                if(prepmodal != null)
-									                                                    clearTimeout(prepmodal);
-									                                                prepmodal = null;
-									                                                tooltip.innerHTML = "";
-									                                                tooltip.style.visibility = 'hidden';
-									                                                modalpreview.style.visibility = 'hidden'
-									                                            }
-									                                        }
-									                                    }
-									                                    function getCanvasRelativePosition(event) {
-									                                        const rect = canvas.getBoundingClientRect();
-									                                        const x = (event.clientX - rect.left) * canvas.width  / rect.width;
-									                                        const y = (event.clientY - rect.top ) * canvas.height / rect.height;
-									                                        if(x > 0 & y > 0 & x < (canvas.width) & y < (canvas.height))
-									                                        {
-									                                            tooltip.style.left = x + 'px';
-									                                            tooltip.style.top = y + 'px';
-									                                        }
-									                                        return {
-									                                            x: x,
-									                                            y: y,
-									                                        };
-									                                    }
-									                                    function setPickPosition(event) {
-									                                        const pos = getCanvasRelativePosition(event);
-									                                        pickPosition.x = (pos.x / canvas.width ) *  2 - 1;
-									                                        pickPosition.y = (pos.y / canvas.height) * -2 + 1;  // note we flip Y
-									                                    }
-									                                    function clearPickPosition() {
-									                                        // unlike the mouse which always has a position
-									                                        // if the user stops touching the screen we want
-									                                        // to stop picking. For now we just pick a value
-									                                        // unlikely to pick something
-									                                        pickPosition.x = -100000;
-									                                        pickPosition.y = -100000;
-									                                    }
-									                                    function resizeRendererToDisplaySize(renderer) {
-									                                        const canvas = renderer.domElement;
-									                                        const width = canvas.clientWidth;
-									                                        const height = canvas.clientHeight;
-									                                        const needResize = canvas.width !== width || canvas.height !== height;
-									                                        if (needResize) {
-									                                            renderer.setSize(width, height, false);
-									                                        }
-									                                        return needResize;
-									                                    }
-									                                    function render(time) {
-									                                        if (resizeRendererToDisplaySize(renderer)) {
-									                                            const canvas = renderer.domElement;
-									                                            camera.aspect = canvas.clientWidth / canvas.clientHeight;
-									                                            camera.updateProjectionMatrix();
-									                                        }
-									                                        pickHelper.pick(pickPosition, scene, camera, time);
-									                                        renderer.render(scene, camera);
-									                                        requestAnimationFrame(render);
-									                                        controls.update();
-									                                    }
-									                                    init();
+									var pickPosition = {x: 0, y: 0};
+									function init() {
+										canvas = document.querySelector('#corecontainer');
+										tooltip = document.querySelector('#tooltip');
+										modalpreview = document.querySelector('#modalpreview');
+										renderer = new THREE.WebGLRenderer({canvas:canvas,alpha: true});
+										renderer.setClearColor( 0x000000, 0 ); // the default
+										scene = new THREE.Scene();
+										scene.background = new THREE.Color('white');
+										const fov = 40;
+										const aspect = 2;  // the canvas default
+										const near = 0.1;
+										const far = 10;
+										camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+										camera.position.set( 0.6, 0.1, 0.4 );
+										camera.lookAt( 0,0,0);
+										{
+											var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
+											scene.add( ambientLight );
+											const color = 0xFFFFFF;
+											const intensity = 0.8;
+											var directionalLight = new THREE.DirectionalLight( color, intensity );
+											directionalLight.position.set( 1, 1, 0 ).normalize();
+											scene.add( directionalLight );
+										}
+										// interferese with raycaster
+										// var axesHelper = new THREE.AxesHelper( 5 );
+										// scene.add( axesHelper );
+										// CONTROLS
+										controls = new THREE.OrbitControls( camera, renderer.domElement );
+										controls.autoRotate = true;
+										controls.enableZoom  = false;
+										controls.enablePan  = false;
+										controls.maxDistance  = 1.0;
+										controls.minDistance  = 0.4;
+										controls.enableRotate  = true;
+										controls.minPolarAngle = Math.PI/2;
+										controls.maxPolarAngle = Math.PI/2;
+										// controls.target  = new THREE.Vector3(0.38, 0.2, -0.16 );
+										controls.target  = new THREE.Vector3(0,0,0 );
+										// loading manager
+										var loadingManager = new THREE.LoadingManager( function () {
+											scene.add( core );
+											var motor = new THREE.Mesh( new THREE.CylinderGeometry( 0.1, 0.1,0.25, 32 ), new THREE.MeshLambertMaterial( { color: 0x0000ff,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+											motor.position.set(-0.11,0,0);
+											motor.rotation.x = Math.PI / 2;
+											motor.name = "motor";
+											scene.add( motor );
+											var controller = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.08,0.18 ), new THREE.MeshLambertMaterial( { color: 0x451903,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+											controller.position.set(-0.4,-0.01,0);
+											controller.name = "controller";
+											scene.add( controller );
+											var radiator = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.14,0.3 ), new THREE.MeshLambertMaterial( { color: 0x000023,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+											radiator.position.set(-0.27,-0.03,0);
+											radiator.name = "radiator";
+											scene.add( radiator );
+											var pulley1 = new THREE.Mesh( new THREE.CylinderGeometry( 0.1, 0.1,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+											pulley1.position.set(0.22,-0.015,0.15);
+											pulley1.rotation.x = Math.PI / 2;
+											pulley1.name = "powertrain";
+											scene.add( pulley1 );
+											var pulley2 = new THREE.Mesh( new THREE.CylinderGeometry( 0.05, 0.05,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+											pulley2.position.set(-0.11,-0.014,0.16);
+											pulley2.rotation.x = Math.PI / 2;
+											pulley2.name = "powertrain";
+											scene.add( pulley2 );
+										} );
+										// collada
+										var loader = new THREE.ColladaLoader( loadingManager );
+										loader.load( '{{site.url}}/assets/starya/core.dae', function ( collada ) {
+											core = collada.scene;
+											// when the mouse moves, call the given function
+											window.addEventListener('mousemove', setPickPosition);
+											window.addEventListener('mouseout', clearPickPosition);
+											window.addEventListener('mouseleave', clearPickPosition);
+											window.addEventListener('touchstart', (event) => {
+												// prevent the window from scrolling
+												//    event.preventDefault();
+													setPickPosition(event.touches[0]);
+												}, {passive: false}
+											);
+											window.addEventListener('touchmove', (event) => {
+												setPickPosition(event.touches[0]);
+											});
+											window.addEventListener('touchend', clearPickPosition);
+											clearPickPosition();
+											requestAnimationFrame(render);
+											pickHelper = new PickHelper();
+										} );
+									}
+									var openmodal = function (modal) {
+											$("#modal-motor").modal("hide")
+											$("#modal-controller").modal("hide")
+											$("#modal-powertrain").modal("hide")
+											$("#modal-cooling").modal("hide")
+											switch(modal){
+												case 'motor'      :  $("#modal-motor").modal("show");break;
+												case 'controller' :  $("#modal-controller").modal("show");break;
+												case 'powertrain'     :  $("#modal-powertrain").modal("show");break;
+												case 'radiator'    :  $("#modal-cooling").modal("show");break;
+											}
+										};
+									var prepmodal = null;
+									class PickHelper {
+									constructor() {
+										this.raycaster = new THREE.Raycaster();
+										this.pickedObject = null;
+										this.pickedObjectSavedColor = 0;
+									}
+									pick(normalizedPosition, scene, camera, time) {
+											// // restore the color if there is a picked object
+											if (this.pickedObject) {
+											this.pickedObject.material.emissive.setHex(this.pickedObjectSavedColor);
+											this.pickedObject = undefined;
+											}
+											// cast a ray through the frustum
+											this.raycaster.setFromCamera(normalizedPosition, camera);
+											// get the list of objects the ray intersected
+											const intersectedObjects = this.raycaster.intersectObjects(scene.children);
+											if (intersectedObjects.length) {
+												// pick the first object. It's the closest one
+												this.pickedObject = intersectedObjects[0].object;
+												// if holding on to the same then popup modal
+												if(tooltip.innerHTML == this.pickedObject.name){
+													if(prepmodal == null)
+														prepmodal = setTimeout(openmodal, 1000, this.pickedObject.name);
+												}else{
+													// stop modal
+													if(prepmodal != null)
+														clearTimeout(prepmodal);
+													prepmodal = null;
+												}
+												tooltip.innerHTML = this.pickedObject.name;
+												tooltip.style.visibility = 'visible';
+												modalpreview.style.visibility = 'visible'
+												// save its color
+												this.pickedObjectSavedColor = this.pickedObject.material.emissive.getHex();
+												// set its emissive color to flashing red/yellow
+												this.pickedObject.material.emissive.setHex((time * 8) % 2 > 1 ? 0xFFFF00 : 0xFF0000);
+												controls.autoRotate = false;
+											}else{
+												if(prepmodal != null)
+													clearTimeout(prepmodal);
+												prepmodal = null;
+												tooltip.innerHTML = "";
+												tooltip.style.visibility = 'hidden';
+												modalpreview.style.visibility = 'hidden'
+												controls.autoRotate = true;
+											}
+										}
+									}
+									function getCanvasRelativePosition(event) {
+										const rect = canvas.getBoundingClientRect();
+										const x = (event.clientX - rect.left) * canvas.width  / rect.width;
+										const y = (event.clientY - rect.top ) * canvas.height / rect.height;
+										if(x > 0 & y > 0 & x < (canvas.width) & y < (canvas.height))
+										{
+											tooltip.style.left = x + 'px';
+											tooltip.style.top = y + 'px';
+										}
+										return {
+											x: x,
+											y: y,
+										};
+									}
+									function setPickPosition(event) {
+										const pos = getCanvasRelativePosition(event);
+										pickPosition.x = (pos.x / canvas.width ) *  2 - 1;
+										pickPosition.y = (pos.y / canvas.height) * -2 + 1;  // note we flip Y
+									}
+									function clearPickPosition() {
+										// unlike the mouse which always has a position
+										// if the user stops touching the screen we want
+										// to stop picking. For now we just pick a value
+										// unlikely to pick something
+										pickPosition.x = -100000;
+										pickPosition.y = -100000;
+									}
+									function resizeRendererToDisplaySize(renderer) {
+										const canvas = renderer.domElement;
+										const width = canvas.clientWidth;
+										const height = canvas.clientHeight;
+										const needResize = canvas.width !== width || canvas.height !== height;
+										if (needResize) {
+											renderer.setSize(width, height, false);
+										}
+										return needResize;
+									}
+									function render(time) {
+										if (resizeRendererToDisplaySize(renderer)) {
+											const canvas = renderer.domElement;
+											camera.aspect = canvas.clientWidth / canvas.clientHeight;
+											camera.updateProjectionMatrix();
+										}
+										pickHelper.pick(pickPosition, scene, camera, time);
+										renderer.render(scene, camera);
+										requestAnimationFrame(render);
+										controls.update();
+									}
+									init();
 								</script>
 							</div>
 						</div>
