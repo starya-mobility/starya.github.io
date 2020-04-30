@@ -101,7 +101,7 @@ layout: default
             <span class="span-100"></span>
         </div>
         <!-- Video Bg -->
-        <video id="vid" preload="metadata" muted autoplay ></video>
+        <video id="vid" preload="metadata" muted autoplay loop></video>
             <!-- <source src="{{site.splash-videobg}}" type="video/mp4"> -->
             <!-- <p>Your browser doesn't support the HTML5 video tag it seems.</p> -->
         <script>
@@ -135,9 +135,9 @@ layout: default
 
             const video = document.querySelector('video');
             video.onended = (event) => {
-                $('html, body').animate({
-                    scrollTop: $("#homegrown").offset().top
-                }, 2000);
+                // $('html, body').animate({
+                //     scrollTop: $("#homegrown").offset().top
+                // }, 2000);
             };
 
         </script>
