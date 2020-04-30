@@ -205,19 +205,19 @@ toc: false
 									                                            controller.position.set(-0.4,-0.01,0);
 									                                            controller.name = "controller";
 									                                            scene.add( controller );
-									                                            var cooling = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.14,0.3 ), new THREE.MeshLambertMaterial( { color: 0x000023,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
-									                                            cooling.position.set(-0.27,-0.03,0);
-									                                            cooling.name = "cooling";
-									                                            scene.add( cooling );
+									                                            var radiator = new THREE.Mesh( new THREE.BoxGeometry( 0.08, 0.14,0.3 ), new THREE.MeshLambertMaterial( { color: 0x000023,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
+									                                            radiator.position.set(-0.27,-0.03,0);
+									                                            radiator.name = "radiator";
+									                                            scene.add( radiator );
 									                                            var pulley1 = new THREE.Mesh( new THREE.CylinderGeometry( 0.1, 0.1,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
 									                                            pulley1.position.set(0.22,-0.015,0.15);
 									                                            pulley1.rotation.x = Math.PI / 2;
-									                                            pulley1.name = "pulley";
+									                                            pulley1.name = "powertrain";
 									                                            scene.add( pulley1 );
 									                                            var pulley2 = new THREE.Mesh( new THREE.CylinderGeometry( 0.05, 0.05,0.04, 32 ), new THREE.MeshLambertMaterial( { color: 0xFFFFFF,side: THREE.DoubleSide, transparent: true, opacity: 0.01 })) ;
 									                                            pulley2.position.set(-0.11,-0.014,0.16);
 									                                            pulley2.rotation.x = Math.PI / 2;
-									                                            pulley2.name = "pulley";
+									                                            pulley2.name = "powertrain";
 									                                            scene.add( pulley2 );
 									                                        } );
 									                                        // collada
@@ -251,8 +251,8 @@ toc: false
 									                                            switch(modal){
 									                                                case 'motor'      :  $("#modal-motor").modal("show");break;
 									                                                case 'controller' :  $("#modal-controller").modal("show");break;
-									                                                case 'pulley'     :  $("#modal-powertrain").modal("show");break;
-									                                                case 'cooling'    :  $("#modal-cooling").modal("show");break;
+									                                                case 'powertrain'     :  $("#modal-powertrain").modal("show");break;
+									                                                case 'radiator'    :  $("#modal-cooling").modal("show");break;
 									                                            }
 									                                        };
 									                                    var prepmodal = null;
