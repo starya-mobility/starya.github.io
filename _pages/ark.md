@@ -354,101 +354,101 @@ toc: false
 								</script>
 							</div>
 						</div>
-						<div class="modal fade" id="modal-motor" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-							<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-								<div class="modal-content bg-gradient-danger">
-									<div class="modal-header">
-										<h3 class="modal-title" id="modal-title-info">PMSM Motor</h3>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<div class="description">
-											<p>Permanent.Magnet.Synchronous.Motor is chosen to provide the most efficient yet completely noiseless engine for ARK core</p>
-											<label>Type</label> <code>PMSM / BLAC</code>
-											<br>
-											<label>Continuous Power</label> <code>6.5kW</code>
-											<br>
-											<label>Peak Power</label> <code>10kW</code>
-											<br>
-											<label>Rated Speed</label> <code>2500RPM</code>
-											<br>
-											<label>Rated Torque</label> <code>30Nm</code>
-											<br>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-motor" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+				<div class="modal-content bg-gradient-danger">
+					<div class="modal-header">
+						<h3 class="modal-title" id="modal-title-info">PMSM Motor</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="description">
+							<p>Permanent.Magnet.Synchronous.Motor is chosen to provide the most efficient yet completely noiseless engine for ARK core</p>
+							<label>Type</label> <code>PMSM / BLAC</code>
+							<br>
+							<label>Continuous Power</label> <code>6.5kW</code>
+							<br>
+							<label>Peak Power</label> <code>10kW</code>
+							<br>
+							<label>Rated Speed</label> <code>2500RPM</code>
+							<br>
+							<label>Rated Torque</label> <code>30Nm</code>
+							<br>
 						</div>
-						<div class="modal fade" id="modal-controller" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-							<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-								<div class="modal-content bg-gradient-danger">
-									<div class="modal-header">
-										<h3 class="modal-title" id="modal-title-info">FOC Controller</h3>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<div class="description">
-											<p>With a strong open source foundation our controller runs on popular VESC architecture utilizing realtime ChibiOS to make it the most resilient motor controller for an automobile.</p>
-											<label>Continuous Current</label> <code>300A</code>
-											<br>
-											<label>Burst Current</label> <code>450A</code>
-											<br>
-											<label>Control Mpde</label> <code>Field.Oriented.Control</code>
-											<br>
-											<label>Robustness</label> <code>Hard-Real.Time.Operating.System</code>
-											<br>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-controller" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+				<div class="modal-content bg-gradient-danger">
+					<div class="modal-header">
+						<h3 class="modal-title" id="modal-title-info">FOC Controller</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="description">
+							<p>With a strong open source foundation our controller runs on popular VESC architecture utilizing realtime ChibiOS to make it the most resilient motor controller for an automobile.</p>
+							<label>Continuous Current</label> <code>300A</code>
+							<br>
+							<label>Burst Current</label> <code>450A</code>
+							<br>
+							<label>Control Mpde</label> <code>Field.Oriented.Control</code>
+							<br>
+							<label>Robustness</label> <code>Hard-Real.Time.Operating.System</code>
+							<br>
 						</div>
-						<div class="modal fade" id="modal-powertrain" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-							<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-								<div class="modal-content bg-gradient-danger">
-									<div class="modal-header">
-										<h3 class="modal-title" id="modal-title-info">Power Train</h3>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<div class="description">
-											<p>2 Pulley speed reduction power train provides the most elegant power train utlizing carbon fiber belt for efficient energy transfer</p>
-											<label>Reduction Ratio</label> <code>3:1</code>
-											<br>
-											<label>Belt</label> <code>Carbon Fiber</code>
-											<br>
-											<label>Peak Torque</label> <code>120Nm+ [Consistent]</code>
-											<br>
-											<label>Peak Speed</label> <code>75kmph</code>
-											<br>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-powertrain" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+				<div class="modal-content bg-gradient-danger">
+					<div class="modal-header">
+						<h3 class="modal-title" id="modal-title-info">Power Train</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="description">
+							<p>2 Pulley speed reduction power train provides the most elegant power train utlizing carbon fiber belt for efficient energy transfer</p>
+							<label>Reduction Ratio</label> <code>3:1</code>
+							<br>
+							<label>Belt</label> <code>Carbon Fiber</code>
+							<br>
+							<label>Peak Torque</label> <code>120Nm+ [Consistent]</code>
+							<br>
+							<label>Peak Speed</label> <code>75kmph</code>
+							<br>
 						</div>
-						<div class="modal fade" id="modal-cooling" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-							<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-								<div class="modal-content bg-gradient-danger">
-									<div class="modal-header">
-										<h3 class="modal-title" id="modal-title-info">Liquid Cooled</h3>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<div class="description">
-											<p>With great power comes great heat, and hence cooling becomes a necessity but with liquid cooling we bring not only coolness to the core but also improve its overall efficiency</p>
-											<label>Method</label> <code>Radiation</code>
-											<br>
-											<label>Coolant</label> <code>Liquid </code>
-											<br>
-											<label>Rated Transfer</label> <code>200 j/s</code>
-											<br>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-cooling" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+				<div class="modal-content bg-gradient-danger">
+					<div class="modal-header">
+						<h3 class="modal-title" id="modal-title-info">Liquid Cooled</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="description">
+							<p>With great power comes great heat, and hence cooling becomes a necessity but with liquid cooling we bring not only coolness to the core but also improve its overall efficiency</p>
+							<label>Method</label> <code>Radiation</code>
+							<br>
+							<label>Coolant</label> <code>Liquid </code>
+							<br>
+							<label>Rated Transfer</label> <code>200 j/s</code>
+							<br>
 						</div>
 					</div>
 				</div>
