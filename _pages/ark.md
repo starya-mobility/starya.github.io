@@ -27,7 +27,7 @@ toc: false
 					<div class="col-lg-10 px-4">
 						<!-- Toc if any -->{% if page.toc %}
 						<div class="toc mt-4 mb-4 lead text-muted">
-							<h3 class="display-3 text-warning">Summary</h3>
+							<h3 class="display-3 text-">Summary</h3>
 							{% include toc.html html=content %}</div>{% endif %}
 						<!-- End Toc -->
 						<!-- Main Content -->
@@ -44,108 +44,51 @@ toc: false
 										</div>
 									</div>
 								</div>
-								<!-- Motor -->
-								<div class="py-5">
-									<div class="container">
-										<div class="row align-items-center">
-											<div class="col-lg-5">
-												<div class="info info-horizontal info-hover-primary">
-													<div class="description">
-														<h3 class="display-3 title">PMSM Motor</h3>
-														<p>Permanent.Magnet.Synchronous.Motor is chosen to provide the most efficient yet completely noiseless engine for ARK core</p>
-														<label>Type</label> <code>PMSM / BLAC</code>
-														<br>
-														<label>Continuous Power</label> <code>6.5kW</code>
-														<br>
-														<label>Peak Power</label> <code>10kW</code>
-														<br>
-														<label>Rated Speed</label> <code>2500RPM</code>
-														<br>
-														<label>Rated Torque</label> <code>30Nm</code>
-														<br>
-													</div>
+								<div class="col-lg-12 mt-5">
+									<div class="card shadow">
+										<div class="card-body">
+											<div class="tab-content" style="min-height:25vh" id="myTabContent">
+												<div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+												<h2 class="display-2 text-center">15 deg</h2>
+												<p class="description text-center" style="height:10vh;">Now you don't have to unload in an uphill climb, ARK will breeze easily over any flyover or mountain terrain just like your 125cc moped with pillion.</p>
 												</div>
-											</div>
-											<div class="col-lg-7 px-5">
-												<img src="https://res.cloudinary.com/gowrav/image/upload/v1588140734/Gallery%20Starya/motor_focus_iwpqzc.png" width="100%">
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Controller -->
-								<div class="py-5">
-									<div class="container py-5">
-										<div class="row align-items-center">
-											<div class="col-lg-7 px-5">
-												<img src="https://res.cloudinary.com/gowrav/image/upload/v1588137433/Gallery%20Starya/controller_focus_rjmxtb.png" width="100%">
-											</div>
-											<div class="col-lg-5">
-												<div class="info info-horizontal info-hover-primary">
-													<div class="description">
-														<h3 class="display-3 title">FOC Controller</h3>
-														<p>With a strong open source foundation our controller runs on popular VESC architecture utilizing realtime ChibiOS to make it the most resilient motor controller for an automobile.</p>
-														<label>Continuous Current</label> <code>300A</code>
-														<br>
-														<label>Burst Current</label> <code>450A</code>
-														<br>
-														<label>Control Mpde</label> <code>Field.Oriented.Control</code>
-														<br>
-														<label>Robustness</label> <code>Hard-Real.Time.Operating.System</code>
-														<br>
-													</div>
+												<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+												<h2 class="display-2 text-center">0-40/3.9s</h2>
+												<p class="description text-center" style="height:15vh;">Stop and Move is now exiting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junciton when that signal turns green.</p>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+												<h2 class="display-2 text-center">75km/hr</h2>
+												<p class="description text-center" style="height:15vh;">Choose sport mode and zoom into action, with ARK capabled of achieving a top speed of 75kmph you will not only be safe but stunning too.</p>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
+												<h2 class="display-2 text-center">105kg</h2>
+												<p class="description text-center" style="height:15vh;">Robustness comes from center of gravity and in ARK the kerb weight is specially calibrated to keep you grounded even at full speed.</p>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
+												<h2 class="display-2 text-center">75km/swap</h2>
+												<p class="description text-center" style="height:15vh;">With ARK's energy efficient core and swappable battery model your pitstop will be a luxuary. Change the battery in less than 10seconds and get back on the track.</p>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<!-- Power Train -->
-								<div class="py-5">
-									<div class="container">
-										<div class="row align-items-center">
-											<div class="col-lg-5">
-												<div class="info info-horizontal info-hover-primary">
-													<div class="description">
-														<h3 class="display-3 title">Power Train</h3>
-														<p>2 Pulley speed reduction power train provides the most elegant power train utlizing carbon fiber belt for efficient energy transfer</p>
-														<label>Reduction Ratio</label> <code>3:1</code>
-														<br>
-														<label>Belt</label> <code>Carbon Fiber</code>
-														<br>
-														<label>Peak Torque</label> <code>120Nm+ [Consistent]</code>
-														<br>
-														<label>Peak Speed</label> <code>75kmph</code>
-														<br>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-7 px-5">
-												<img src="https://res.cloudinary.com/gowrav/image/upload/v1588137433/Gallery%20Starya/pulley_focus_foqzuk.png" width="100%">
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Cooling -->
-								<div class="py-5">
-									<div class="container">
-										<div class="row align-items-center">
-											<div class="col-lg-7 px-5">
-												<img src="https://res.cloudinary.com/gowrav/image/upload/v1588139310/Gallery%20Starya/cooling_focus_aoupaq.png" width="100%">
-											</div>
-											<div class="col-lg-5">
-												<div class="info info-horizontal info-hover-primary">
-													<div class="description">
-														<h3 class="display-3 title">Liquid Cooled</h3>
-														<p>With great power comes great heat, and hence cooling becomes a necessity but with liquid cooling we bring not only coolness to the core but also improve its overall efficiency</p>
-														<label>Method</label> <code>Radiation</code>
-														<br>
-														<label>Coolant</label> <code>Liquid </code>
-														<br>
-														<label>Rated Transfer</label> <code>200 j/s</code>
-														<br>
-													</div>
-												</div>
-											</div>
-										</div>
+									<div class="nav-wrapper">
+										<ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link mb-sm-2 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-road mr-2"></i>Gradient</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="fas fa-bolt mr-2"></i>Acceleration</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="fas fa-tachometer-alt mr-2"></i>Top-speed</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false"><i class="fas fa-weight-hanging mr-2"></i>Kerb-Weight</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false"><i class="fas fa-gas-pump mr-2"></i>Mileage</a>
+											</li>
+										</ul>
 									</div>
 								</div>
 								<script src="{{site.url}}/assets/3js/three.js"></script>
@@ -362,97 +305,117 @@ toc: false
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="modal-motor" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-				<div class="modal-content bg-gradient-danger">
+		<div class="modal fade" id="modal-motor" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-" role="document">
+				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="modal-title-info">PMSM Motor</h3>
+						<h3 class="modal-title" id="modal-title-default">PMSM Motor</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						<div class="description">
-							<p>Permanent.Magnet.Synchronous.Motor is chosen to provide the most efficient yet completely noiseless engine for ARK core</p>
-							<label>Type</label> <code>PMSM / BLAC</code>
-							<br>
-							<label>Continuous Power</label> <code>6.5kW</code>
-							<br>
-							<label>Peak Power</label> <code>10kW</code>
-							<br>
-							<label>Rated Speed</label> <code>2500RPM</code>
-							<br>
-							<label>Rated Torque</label> <code>30Nm</code>
-							<br>
+					<div class="modal-body row align-items-center justify-content-center">
+						<p>Permanent.Magnet.Synchronous.Motor is chosen to provide the most efficient yet completely noiseless engine for ARK core</p>
+						<div class="col-lg-5">
+							<div class="description">
+								<label>Type</label> <code>PMSM / BLAC</code>
+								<br>
+								<label>Continuous Power</label> <code>6.5kW</code>
+								<br>
+								<label>Peak Power</label> <code>10kW</code>
+								<br>
+								<label>Rated Speed</label> <code>2500RPM</code>
+								<br>
+								<label>Rated Torque</label> <code>30Nm</code>
+								<br>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<img src="https://res.cloudinary.com/gowrav/image/upload/v1588140734/Gallery%20Starya/motor_focus_iwpqzc.png" width="100%">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="modal-controller" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-				<div class="modal-content bg-gradient-danger">
+		<div class="modal fade" id="modal-controller" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-" role="document">
+				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="modal-title-info">FOC Controller</h3>
+						<h3 class="modal-title" id="modal-title-default">FOC Controller</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						<div class="description">
-							<p>With a strong open source foundation our controller runs on popular VESC architecture utilizing realtime ChibiOS to make it the most resilient motor controller for an automobile.</p>
-							<label>Continuous Current</label> <code>300A</code>
-							<br>
-							<label>Burst Current</label> <code>450A</code>
-							<br>
-							<label>Control Mpde</label> <code>Field.Oriented.Control</code>
-							<br>
-							<label>Robustness</label> <code>Hard-Real.Time.Operating.System</code>
-							<br>
+					<div class="modal-body row align-items-center justify-content-center">
+						<p>Utilizing Real.Time.Operating.System ChibiOS ARK has the most resilient Field.Oriented.Controler for an automobile.</p>
+						<div class="col-lg-5">
+							<div class="description">
+								<label>Continuous Current</label> <code>300A</code>
+								<br>
+								<label>Burst Current</label> <code>450A</code>
+								<br>
+								<label>Control Mode</label> <code>~FOC</code>
+								<br>
+								<label>Robustness</label> <code>RTOS</code>
+								<br>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<img src="https://res.cloudinary.com/gowrav/image/upload/v1588137433/Gallery%20Starya/controller_focus_rjmxtb.png" width="100%">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="modal-powertrain" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-				<div class="modal-content bg-gradient-danger">
+		<div class="modal fade" id="modal-powertrain" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-" role="document">
+				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="modal-title-info">Power Train</h3>
+						<h3 class="modal-title" id="modal-title-default">Power Train</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						<div class="description">
-							<p>2 Pulley speed reduction power train provides the most elegant power train utlizing carbon fiber belt for efficient energy transfer</p>
-							<label>Reduction Ratio</label> <code>3:1</code>
-							<br>
-							<label>Belt</label> <code>Carbon Fiber</code>
-							<br>
-							<label>Peak Torque</label> <code>120Nm+ [Consistent]</code>
-							<br>
-							<label>Peak Speed</label> <code>75kmph</code>
-							<br>
+					<div class="modal-body row align-items-center justify-content-center">
+						<p>2 Pulley speed reduction power train provides the most elegant power train utlizing carbon fiber belt for efficient energy transfer</p>
+						<div class="col-lg-6">
+							<div class="description">
+								<label>Reduction Ratio</label> <code>3:1</code>
+								<br>
+								<label>Belt</label> <code>Carbon Fiber</code>
+								<br>
+								<label>Torque</label> <code>120Nm+[Consistent]</code>
+								<br>
+								<label>Speed</label> <code>75kmph</code>
+								<br>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<img src="https://res.cloudinary.com/gowrav/image/upload/v1588137433/Gallery%20Starya/pulley_focus_foqzuk.png" width="100%">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="modal-cooling" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-			<div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-				<div class="modal-content bg-gradient-danger">
+		<div class="modal fade" id="modal-cooling" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-" role="document">
+				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="modal-title-info">Liquid Cooled</h3>
+						<h3 class="modal-title" id="modal-title-default">Liquid Cooled</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						<div class="description">
-							<p>With great power comes great heat, and hence cooling becomes a necessity but with liquid cooling we bring not only coolness to the core but also improve its overall efficiency</p>
-							<label>Method</label> <code>Radiation</code>
-							<br>
-							<label>Coolant</label> <code>Liquid </code>
-							<br>
-							<label>Rated Transfer</label> <code>200 j/s</code>
-							<br>
+					<div class="modal-body row align-items-center justify-content-center">
+						<p>With liquid cooling we bring not only coolness to the core but also improve its overall efficiency</p>
+						<div class="col-lg-5">
+							<div class="description">
+								<label>Method</label> <code>Radiation</code>
+								<br>
+								<label>Coolant</label> <code>Liquid </code>
+								<br>
+								<label>Rated Transfer</label> <code>200 j/s</code>
+								<br>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<img src="https://res.cloudinary.com/gowrav/image/upload/v1588139310/Gallery%20Starya/cooling_focus_aoupaq.png" width="100%">
 						</div>
 					</div>
 				</div>
