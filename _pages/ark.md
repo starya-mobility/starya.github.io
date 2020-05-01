@@ -74,13 +74,13 @@ toc: false
 									<div class="nav-wrapper">
 										<ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
 											<li class="nav-item">
-												<a class="nav-link mb-sm-2 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-road mr-2"></i>Gradient</a>
+												<a class="nav-link mb-sm-2 mb-md-" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-road mr-2"></i>Gradient</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="fas fa-bolt mr-2"></i>Acceleration</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="fas fa-tachometer-alt mr-2"></i>Top-speed</a>
+												<a class="nav-link mb-sm-2 mb-md-0 active" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="fas fa-tachometer-alt mr-2"></i>Top-speed</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link mb-sm-2 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false"><i class="fas fa-weight-hanging mr-2"></i>Kerb-Weight</a>
