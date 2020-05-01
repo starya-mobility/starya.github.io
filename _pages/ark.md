@@ -54,7 +54,7 @@ toc: false
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
 												<h2 class="display-2 text-center">0-40/3.9s</h2>
-												<p class="description text-center" style="height:15vh;">Stop and Move is now exiting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junciton when that signal turns green.</p>
+												<p class="description text-center" style="height:15vh;">Stop and Move is now exiting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junction when that signal turns green.</p>
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
 												<h2 class="display-2 text-center">75km/hr</h2>
@@ -65,8 +65,8 @@ toc: false
 												<p class="description text-center" style="height:15vh;">Robustness comes from center of gravity and in ARK the kerb weight is specially calibrated to keep you grounded even at full speed.</p>
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
-												<h2 class="display-2 text-center">75km/swap</h2>
-												<p class="description text-center" style="height:15vh;">With ARK's energy efficient core and swappable battery model your pitstop will be a luxuary. Change the battery in less than 10seconds and get back on the track.</p>
+												<h2 class="display-2 text-center">80km/swap</h2>
+												<p class="description text-center" style="height:15vh;">With ARK's energy efficient core and swappable battery model your pitstop will be a luxuary. Change the battery in less than 10 seconds and get back on the track.</p>
 												</div>
 											</div>
 										</div>
