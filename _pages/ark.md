@@ -48,7 +48,7 @@ toc: false
 									<div class="card shadow">
 										<div class="card-body">
 											<div class="tab-content" style="min-height:25vh" id="myTabContent">
-												<div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+												<div class="tab-pane fade" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
 												<h2 class="display-2 text-center">15 deg</h2>
 												<p class="description text-center" style="height:10vh;">Now you don't have to unload in an uphill climb, ARK will breeze easily over any flyover or mountain terrain just like your 125cc moped with pillion.</p>
 												</div>
@@ -56,7 +56,7 @@ toc: false
 												<h2 class="display-2 text-center">0-40/3.9s</h2>
 												<p class="description text-center" style="height:15vh;">Stop and Move is now exiting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junction when that signal turns green.</p>
 												</div>
-												<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+												<div class="tab-pane fade active show" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
 												<h2 class="display-2 text-center">75km/hr</h2>
 												<p class="description text-center" style="height:15vh;">Choose sport mode and zoom into action, with ARK capabled of achieving a top speed of 75kmph you will not only be safe but stunning too.</p>
 												</div>
