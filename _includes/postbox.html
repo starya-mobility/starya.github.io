@@ -17,15 +17,18 @@
     </div>
     <h4 class="display-4 text-white py-4" style="position: relative;text-align: center;">{{ post.title | strip_html | truncatewords:5 }}</h4>
   </div>
-  <div class="card-body" style="padding-left: 2.5rem;padding-right: 2.5rem;">
-    <div class="row" style="max-height: 9rem;overflow: hidden;">
-    <p class="description justify-content">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+  <div class="card-body" style="padding-left: 1.5rem;padding-right: 1.5rem;">
+    <div class="description justify-content" style="padding-bottom: 3rem;max-height: 8rem; overflow: hidden;text-overflow: ellipsis;">
+      {{ post.excerpt | strip_html | truncatewords:45 }}
     </div>
-    <div class="row justify-content-end px-3">
-    <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
-    <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="btn btn-sm btn-link text-secondary btn-outline-secondary disabled"><span class="btn-inner--text" style=" text-transform:none;">More</span><i class="fas fa-angle-right"></i></a>
+    <div class="float-left progress-label">
+      <span class="btn-inner--text" style="text-transform:none;"><i class="fas fa-calendar-day mr-2"></i>{{ post.date | date_to_string }}</span>
     </div>
+    <div class="float-right progress-label">
+      <span class="btn-inner--text" style="text-transform:none;">More<i class="fas fa-angle-right"></i></span>
+    </div>
+      <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
+      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
   </div>
 </div>
 <!-- end post -->

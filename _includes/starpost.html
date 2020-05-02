@@ -19,16 +19,20 @@
       </div>
       <h2 class="display-2 text-white py-5" style="position: relative;text-align: center;margin: revert;">{{ post.title | strip_html | truncatewords:5 }}</h2>
     </div>
-    <div class="card-body" style="padding-left: 2.5rem;padding-right: 2.5rem;">
-      <div class="row" style="height: 30vh;overflow: hidden;">
-      <p>{{ post.excerpt | strip_html | truncatewords:300 }}</p>
+    <div class="card-body" style="padding-left: 1.5rem;padding-right: 1.5rem;">
+      <div class="description lead-text justify-content" style="padding-bottom: 3rem;min-height: 18rem; overflow: hidden;text-overflow: ellipsis;">
+        <p>{{ post.excerpt | strip_html | truncatewords:300 }}</p>
       </div>
-      <div class="row justify-content-end px-3">
-      <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
-      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="btn btn-sm btn-link text-secondary btn-outline-secondary disabled"><span class="btn-inner--text" style=" text-transform:none;">More</span><i class="fas fa-angle-right"></i></a>
+      <div class="float-left progress-label">
+        <span class="btn-inner--text" style="text-transform:none;"><i class="fas fa-calendar-day mr-2"></i>{{ post.date | date_to_string }}</span>
       </div>
+      <div class="float-right progress-label">
+        <span class="btn-inner--text" style="text-transform:none;">More<i class="fas fa-angle-right"></i></span>
+      </div>
+        <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span>  -->
+        <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
     </div>
+
   </div>
   {% endif %}
 {% endfor %}

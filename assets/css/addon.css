@@ -1,11 +1,20 @@
 body{
-    background-color: #f4f5f7;
+    background-color: #f4f2f2 !important;
 }
 .card{
-    background-color: #f4f5f7;
+    background-color: #f4f2f2;
 }
 .nav-pills .nav-link{
-    background-color: #f4f5f7;
+    background-color: #f4f2f2;
+}
+.navbar-collapse.show{
+    background-color: #f4f2f2;
+}
+svg polygon.fill-white{
+    fill: #f4f2f2;
+}
+footer{
+    background-color: #f0f0f0 !important;
 }
 .blockquote {
     border-left: 2px solid rgba(80, 82, 85, 0.22);
