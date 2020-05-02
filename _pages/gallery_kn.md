@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gallery
+title: ಗ್ಯಾಲರಿ
 lang: kn
 ref: gallery
 permalink: /gallery_kn

@@ -3,8 +3,6 @@
     <a class="navbar-brand mr-lg-5" href="{{site.url}}{{site.baseurl}}/{{ site.index[page.lang] }}">
       <img loading="lazy" src="{{site.url}}{{site.baseurl}}/assets/starya/logo-white.png">
     </a>
-
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
       aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,21 +59,19 @@
         {% endif %}
         {% endfor %}
         {% endif %}
-        <li class="nav-item d-lg-block ml-lg-4 dropdown">
-          <a href="javascript:;" class="btn btn-primary btn-icon">
-            <span class="btn-inner--icon">
-              <!-- <i class="fa fa-angle-down"></i> -->
-              <i class="fas fa-language"></i>
-            </span>
-            <!-- <span class="nav-link-inner--text">Language</span> -->
-          </a>
-          <div class="dropdown-menu" >
+        <li class="nav-item">
             {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-            {% for post in posts %} <a class="dropdown-item" href="{{ post.url | prepend: site.baseurl }}">{{ site.languages[post.lang] }}</a> {% endfor %}
-          
+            {% for postitem in posts %}
+              {% if postitem.lang != post.lang %}
+              <a class="btn btn-success btn-icon" style="width: 6rem;" href="{{ postitem.url | prepend: site.baseurl }}">{{ site.languages[postitem.lang] }}</a>
+              {% endif %}
+            {% endfor %}
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-            {% for page in pages %} <a class="dropdown-item" href="{{ page.url | prepend: site.baseurl }}">{{ site.languages[page.lang] }}</a> {% endfor %}
-          </div>
+            {% for pageitem in pages %}
+              {% if pageitem.lang != page.lang %}
+                <a class="btn btn-success btn-icon" style="width: 6rem;" href="{{ pageitem.url | prepend: site.baseurl }}">{{ site.languages[pageitem.lang] }}</a>
+              {% endif %}
+            {% endfor %}
         </li>
       </ul>
     </div>

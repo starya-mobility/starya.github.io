@@ -1,19 +1,49 @@
-- title: Address
-  fa-icon: "fas fa-map-marked-alt"
-  url: "https://goo.gl/maps/yjZaH2zkBLBKvxCGA"
-  desc: "Nagarbhavi, Bengaluru"
+t: 
+  en:
+    - title: Address
+      fa-icon: "fas fa-map-marked-alt"
+      url: "https://goo.gl/maps/yjZaH2zkBLBKvxCGA"
+      desc: "Nagarbhavi, Bengaluru"
 
-- title: Email
-  fa-icon: "fas fa-envelope"
-  url: "mailto:hello@starya.in"
-  desc: "hello@starya.in"
+    - title: Email
+      fa-icon: "fas fa-envelope"
+      url: "mailto:hello@starya.in"
+      desc: "hello@starya.in"
 
-- title: Phone
-  fa-icon: "fas fa-mobile-alt"
-  url: "tel:+91-78292-82519"
-  desc: "+91 78292 82519"
+    - title: Phone
+      fa-icon: "fas fa-mobile-alt"
+      url: "tel:+91-78292-82519"
+      desc: "+91 78292 82519"
 
-- title: Contact
-  fa-icon: "fas fa-user-circle"
-  url: 
-  desc: "Ravi Kumar"
+    - title: Contact
+      fa-icon: "fas fa-user-circle"
+      url: 
+      desc: "Ravi Kumar"
+
+  kn:
+    - title: ವಿಳಾಸ
+      fa-icon: "fas fa-map-marked-alt"
+      url: "https://goo.gl/maps/yjZaH2zkBLBKvxCGA"
+      desc: "ನಾಗರ್ಭವಿ, ಬೆಂಗಳೂರು"
+
+    - title: ಇಮೇಲ್
+      fa-icon: "fas fa-envelope"
+      url: "mailto:hello@starya.in"
+      desc: "hello@starya.in"
+
+    - title: ದೂರವಾಣಿ
+      fa-icon: "fas fa-mobile-alt"
+      url: "tel:+91-78292-82519"
+      desc: "+91 78292 82519"
+
+    - title: ಸಂಪರ್ಕಿಸಿ
+      fa-icon: "fas fa-user-circle"
+      url: 
+      desc: "ರವಿ ಕುಮಾರ್"
+content:
+  en:
+    question: Question?
+    touch: Get in touch with us to know more
+  kn:
+    question: ಪ್ರಶ್ನೆ ?
+    touch: ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕದಲ್ಲಿರಿ

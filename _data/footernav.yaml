@@ -1,6 +1,22 @@
-- title: Terms of Use
-  url: /terms
-- title: Privacy Policy
-  url: /privacy
-- title: Cookie Policy
-  url: /cookiepolicy
+t: 
+  en:
+    - title: Terms of Use
+      url: /terms
+    - title: Privacy Policy
+      url: /privacy
+    - title: Cookie Policy
+      url: /cookiepolicy
+  kn:
+    - title: ನಿಯಮಗಳು
+      url: /terms
+    - title: ಗೌಪ್ಯತೆ
+      url: /privacy
+    - title: Cookie ನೀತಿ
+      url: /cookiepolicy
+content:
+  en:
+    thanks: Thank you for supporting us!
+    contact: Let's get in touch on any of these platforms.
+  kn:
+    thanks: ನಮ್ಮನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!
+    contact: ಈ ಯಾವುದೇ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಸಾಧಿಸೋಣ.

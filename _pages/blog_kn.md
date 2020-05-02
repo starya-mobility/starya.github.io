@@ -1,6 +1,6 @@
 ---
 layout: default
-title: b{log}
+title: ಬ್ಲಾಗ್
 lang: kn
 ref: blog
 permalink: /blog_kn

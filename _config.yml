@@ -2,20 +2,20 @@
 # name: "Starya Mobility"
 title: # the name of your site, e.g. ACME Corp.
   en: "Starya Mobility"
-  kn: "Starya Mobility"
+  kn: "ಸ್ಟಾರ್ಯ ಮೊಬಿಲಿಟಿ"
 description: 
   en: "a startup for EV"
-  kn: "Starya Mobility"
+  kn: "ಓಂದು ಇವಿ ಸ್ಟಾರ್ಟಪ್"
 tagline: 
   en: "Future is Here!"
-  kn: "Future is Here!"
+  kn: "ಭವಿಷ್ಯ ಇಲ್ಲಿದೆ!"
 
 url: "https://starya.in" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. / /home /blog
 
 index:
   en:
-  kn: kannada.html
+  kn: kannada
 feed:
   en: /feed.xml
   kn: /feed_kn.xml

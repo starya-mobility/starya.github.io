@@ -41,7 +41,7 @@ toc: false
 										<div class="col-lg-12 text-center">
 											<div id="tooltip" class="btn-sm btn-primary text-uppercase" style="position: absolute;margin-top: -2rem;margin-left: -3rem;z-index: 100;display:block;visibility:hidden"></div>
 											<canvas style="width:100%" id="corecontainer"></canvas>
-											<div><span id="modalpreview" class="badge badge-pill badge-success text-uppercase">Loading Preview</span>
+											<div><span id="modalpreview" class="badge badge-pill badge-success text-uppercase">Loading...</span>
 											</div>
 										</div>
 									</div>
@@ -56,7 +56,7 @@ toc: false
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
 												<h2 class="display-2 text-center">0-40/3.9s</h2>
-												<p class="description text-center" style="height:15vh;">Stop and Move is now exiting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junction when that signal turns green.</p>
+												<p class="description text-center" style="height:15vh;">Stop and Move is now exciting, ARK can go from standstill to 40kmph in under 4 seconds, so you can be the first to cross the junction when that signal turns green.</p>
 												</div>
 												<div class="tab-pane fade active show" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
 												<h2 class="display-2 text-center">75km/hr</h2>
