@@ -113,25 +113,10 @@
   format: "jpg"
   type: "image"
 
-- title: "Crowd_at_Shrunga_Expo"
-  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002210/Gallery%20Starya/Crowd_at_Shrunga_Expo_yzu7pt.jpg"
-  format: "jpg"
-  type: "image"
-
-- title: "Lets_get_this_assembled"
-  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002210/Gallery%20Starya/Lets_get_this_assembled_kznt8i.jpg"
-  format: "jpg"
-  type: "image"
-
 - title: "Bench_Trials"
   url: "https://res.cloudinary.com/gowrav/video/upload/v1588002209/Gallery%20Starya/Bench_Trials_vzw81e.mp4"
   format: "mp4"
   type: "video"
-
-- title: "Ayudpooja_Celebrations"
-  url: "https://res.cloudinary.com/gowrav/image/upload/v1588002209/Gallery%20Starya/Ayudpooja_Celebrations_a88w6h.jpg"
-  format: "jpg"
-  type: "image"
 
 - title: "WorkBench"
   url: "https://res.cloudinary.com/gowrav/image/upload/v1588002208/Gallery%20Starya/WorkBench_dafbkr.jpg"

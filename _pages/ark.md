@@ -39,7 +39,7 @@ toc: false
 										<div class="col-lg-12 text-center">
 											<div id="tooltip" class="btn-sm btn-primary text-uppercase" style="position: absolute;margin-top: -2rem;margin-left: -3rem;z-index: 100;display:block;visibility:hidden"></div>
 											<canvas style="width:100%" id="corecontainer"></canvas>
-											<div id="modalpreview"> <span class="badge badge-pill badge-success text-uppercase">Loading Preview</span>
+											<div><span id="modalpreview" class="badge badge-pill badge-success text-uppercase">Loading Preview</span>
 											</div>
 										</div>
 									</div>
@@ -58,7 +58,7 @@ toc: false
 												</div>
 												<div class="tab-pane fade active show" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
 												<h2 class="display-2 text-center">75km/hr</h2>
-												<p class="description text-center" style="height:15vh;">Choose sport mode and zoom into action, with ARK capabled of achieving a top speed of 75kmph you will not only be safe but stunning too.</p>
+												<p class="description text-center" style="height:15vh;">Choose sport mode and zoom into action, with ARK capable of achieving a top speed of 75kmph you will not only be safe but stunning too.</p>
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
 												<h2 class="display-2 text-center">105kg</h2>
@@ -66,7 +66,7 @@ toc: false
 												</div>
 												<div class="tab-pane fade" id="tabs-icons-text-5" role="tabpanel" aria-labelledby="tabs-icons-text-5-tab">
 												<h2 class="display-2 text-center">80km/swap</h2>
-												<p class="description text-center" style="height:15vh;">With ARK's energy efficient core and swappable battery model your pitstop will be a luxuary. Change the battery in less than 10 seconds and get back on the track.</p>
+												<p class="description text-center" style="height:15vh;">With ARK's energy efficient core and swappable battery model your pitstop will be a luxury. Change the battery in less than 10 seconds and get back on the track.</p>
 												</div>
 											</div>
 										</div>
@@ -106,7 +106,7 @@ toc: false
 										renderer = new THREE.WebGLRenderer({canvas:canvas,alpha: true});
 										renderer.setClearColor( 0x000000, 0 ); // the default
 										scene = new THREE.Scene();
-										scene.background = new THREE.Color('white');
+										// scene.background = new THREE.Color('white');
 										const fov = 40;
 										const aspect = 2;  // the canvas default
 										const near = 0.1;
@@ -169,6 +169,7 @@ toc: false
 										var loader = new THREE.ColladaLoader( loadingManager );
 										loader.load( '{{site.url}}/assets/starya/core.dae', function ( collada ) {
 											core = collada.scene;
+											modalpreview.innerHTML = 'Touch parts to <b>Know More</b>'
 											// when the mouse moves, call the given function
 											window.addEventListener('mousemove', setPickPosition);
 											window.addEventListener('mouseout', clearPickPosition);
@@ -196,8 +197,8 @@ toc: false
 											switch(modal){
 												case 'motor'      :  $("#modal-motor").modal("show");break;
 												case 'controller' :  $("#modal-controller").modal("show");break;
-												case 'powertrain'     :  $("#modal-powertrain").modal("show");break;
-												case 'radiator'    :  $("#modal-cooling").modal("show");break;
+												case 'powertrain' :  $("#modal-powertrain").modal("show");break;
+												case 'radiator'   :  $("#modal-cooling").modal("show");break;
 											}
 										};
 									var prepmodal = null;
@@ -223,7 +224,7 @@ toc: false
 												// if holding on to the same then popup modal
 												if(tooltip.innerHTML == this.pickedObject.name){
 													if(prepmodal == null)
-														prepmodal = setTimeout(openmodal, 1000, this.pickedObject.name);
+														prepmodal = setTimeout(openmodal, 250, this.pickedObject.name);
 												}else{
 													// stop modal
 													if(prepmodal != null)
@@ -232,7 +233,6 @@ toc: false
 												}
 												tooltip.innerHTML = this.pickedObject.name;
 												tooltip.style.visibility = 'visible';
-												modalpreview.style.visibility = 'visible'
 												// save its color
 												this.pickedObjectSavedColor = this.pickedObject.material.emissive.getHex();
 												// set its emissive color to flashing red/yellow
@@ -244,7 +244,6 @@ toc: false
 												prepmodal = null;
 												tooltip.innerHTML = "";
 												tooltip.style.visibility = 'hidden';
-												modalpreview.style.visibility = 'hidden'
 												controls.autoRotate = true;
 											}
 										}
