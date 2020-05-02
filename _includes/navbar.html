@@ -60,12 +60,6 @@
         {% endfor %}
         {% endif %}
         <li class="nav-item">
-            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-            {% for postitem in posts %}
-              {% if postitem.lang != post.lang %}
-              <a class="btn btn-success btn-icon" style="width: 6rem;" href="{{ postitem.url | prepend: site.baseurl }}">{{ site.languages[postitem.lang] }}</a>
-              {% endif %}
-            {% endfor %}
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
             {% for pageitem in pages %}
               {% if pageitem.lang != page.lang %}
