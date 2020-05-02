@@ -1,9 +1,9 @@
 ---
 layout: page
 title: About Us
-lang: en
+lang: kn
 ref: about
-permalink: /about
+permalink: /about_kn
 author: 
 categories: 
 tags: 

@@ -5,7 +5,7 @@
             <a href="javascript:;">
                 {% assign author = site.authors[page.author] %}
                 {% if author.avatar %}
-                <img  src="{{ site.url }}/{{site.baseurl}}/{{ author.avatar }}"  class="rounded-circle img-fluid shadow-lg" style="width: 100px;padding: 3px; background-color: #32acf7;" alt="{{ author.display_name }}">
+                <img  src="{{ site.url }}{{site.baseurl}}/{{ author.avatar }}"  class="rounded-circle img-fluid shadow-lg" style="width: 100px;padding: 3px; background-color: #32acf7;" alt="{{ author.display_name }}">
                 {% else %}
                 <img  src="https://www.gravatar.com/avatar/{{ author.gravatar }}" class="rounded-circle img-fluid shadow-lg" style="width: 100px;padding: 3px;  background-color: #32acf7;" alt="{{ author.display_name }}">
                 {% endif %}

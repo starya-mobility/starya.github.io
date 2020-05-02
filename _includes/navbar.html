@@ -1,8 +1,10 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" href="/">
-      <img loading="lazy" src="{{site.logo}}">
+    <a class="navbar-brand mr-lg-5" href="{{site.url}}{{site.baseurl}}/{{ site.index[page.lang] }}">
+      <img loading="lazy" src="{{site.url}}{{site.baseurl}}/assets/starya/logo-white.png">
     </a>
+
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
       aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,8 +13,8 @@
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
-            <a href="/">
-              <img loading="lazy" src="{{site.logo-alt}}">
+            <a href="{{site.url}}{{site.baseurl}}/{{ site.index[page.lang] }}">
+              <img loading="lazy" src="{{site.url}}{{site.baseurl}}/assets/starya/logo-orange.png">
             </a>
           </div>
           <div class="col-6 collapse-close">
@@ -25,8 +27,8 @@
         </div>
       </div>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto navbar-nav-hover">
-        {% if site.data.navitems[0] %}
-        {% for item in site.data.navitems %}
+        {% if site.data.navitems.t[page.lang][0] %}
+        {% for item in site.data.navitems.t[page.lang] %}
         {% if item.subnav[0] %}
         <li class="nav-item dropdown">
           <a class="nav-link nav-link-icon" data-toggle="dropdown" href="{{ item.url }}" role="button">
@@ -36,7 +38,7 @@
           <div class="dropdown-menu dropdown-menu-xl">
             <div class="dropdown-menu-inner">
               {% for subitem in item.subnav %}
-              <a href="{{ subitem.url }}" class="media d-flex align-items-center">
+              <a href="{{site.url}}{{site.baseurl}}" class="media d-flex align-items-center">
                 <div class="icon icon-shape rounded-circle text-white {{ subitem.fa-icon-bg }}">
                   <i class="{{ subitem.fa-icon }}"></i>
                 </div>
@@ -59,6 +61,22 @@
         {% endif %}
         {% endfor %}
         {% endif %}
+        <li class="nav-item d-lg-block ml-lg-4 dropdown">
+          <a href="javascript:;" class="btn btn-primary btn-icon">
+            <span class="btn-inner--icon">
+              <!-- <i class="fa fa-angle-down"></i> -->
+              <i class="fas fa-language"></i>
+            </span>
+            <!-- <span class="nav-link-inner--text">Language</span> -->
+          </a>
+          <div class="dropdown-menu" >
+            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+            {% for post in posts %} <a class="dropdown-item" href="{{ post.url | prepend: site.baseurl }}">{{ site.languages[post.lang] }}</a> {% endfor %}
+          
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for page in pages %} <a class="dropdown-item" href="{{ page.url | prepend: site.baseurl }}">{{ site.languages[page.lang] }}</a> {% endfor %}
+          </div>
+        </li>
       </ul>
     </div>
   </div>

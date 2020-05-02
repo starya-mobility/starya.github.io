@@ -1,9 +1,9 @@
 ---
 layout: default
 title: b{log}
-lang: en
+lang: kn
 ref: blog
-permalink: /blog
+permalink: /blog_kn
 comments: false
 ---
 <!-- Featured Image -->

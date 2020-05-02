@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Gallery
-lang: en
+lang: kn
 ref: gallery
-permalink: /gallery
+permalink: /gallery_kn
 ---
 <!-- Featured Image -->
 {% include featured-image.html %}

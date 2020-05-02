@@ -1,22 +1,41 @@
 # Site
 # name: "Starya Mobility"
-title: "Starya Mobility" # the name of your site, e.g. ACME Corp.
-description: "a startup for EV"
-tagline: "Future is Here!"
+title: # the name of your site, e.g. ACME Corp.
+  en: "Starya Mobility"
+  kn: "Starya Mobility"
+description: 
+  en: "a startup for EV"
+  kn: "Starya Mobility"
+tagline: 
+  en: "Future is Here!"
+  kn: "Future is Here!"
+
 url: "https://starya.in" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /home /blog
-logo: 'https://starya.in/assets/img/brand/white.png'
-logo-alt: 'https://starya.in/assets/img/brand/orange.png'
-favicon-folder: 'https://starya.in/assets/img/favicon'
-splash-videobg: 'https://res.cloudinary.com/gowrav/video/upload/v1587997357/Gallery%20Starya/starya_splash_oqqrjd.mp4'
-googleapis_KEY: 'AIzaSyBgPPCxfvGYCznsH_Pp6DLRjBjcjykUdVI'
+baseurl: "" # the subpath of your site, e.g. / /home /blog
+
+index:
+  en:
+  kn: kannada.html
+feed:
+  en: /feed.xml
+  kn: /feed_kn.xml
+
+# logo: 'https://starya.in/assets/img/brand/white.png'
+# logo-alt: 'https://starya.in/assets/img/brand/orange.png'
+# favicon-folder: 'https://starya.in/assets/img/favicon'
+# splash-videobg: 'https://res.cloudinary.com/gowrav/video/upload/v1587997357/Gallery%20Starya/starya_splash_oqqrjd.mp4'
+
+# googleapis_KEY: 'AIzaSyBgPPCxfvGYCznsH_Pp6DLRjBjcjykUdVI'
 # google_analytics: 'UA-xxxxxxxx-1'
 # disqus: 'demowebsite'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
-permalink: /:title/
-email: staryamobility@gmail.com
 
+languages:
+  en: English
+  kn: ಕನ್ನಡ
+include: ["_pages"]
+permalink: /:title/ # Unless Overridden by the page front matter
+email: staryamobility@gmail.com
 
 # Authors
 authors:
@@ -41,13 +60,13 @@ authors:
 
 # Plugins
 plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  # - jekyll-archives
+  # - jekyll-figure
   # - jekyll-paginate
   # - jekyll-sitemap
   # - jekyll-feed
-  - jekyll-seo-tag
-  # - jekyll-archives
-  # - jekyll-figure
-  - jekyll-redirect-from
 
 
 # Archives
@@ -64,7 +83,5 @@ markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
       disable : true
-
-
 
 exclude: [changelog.md, LICENSE, README.md, Gemfile, Gemfile.lock]

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Agile Ride Kit
-lang: en
+lang: kn
 ref: ark
-permalink: /ark
+permalink: /ark_kn
 author: 
 categories: 
 tags: 
