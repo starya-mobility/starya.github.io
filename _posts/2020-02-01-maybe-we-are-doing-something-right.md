@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Maybe,we are doing something right!!
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

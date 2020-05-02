@@ -1,6 +1,8 @@
 ---
 layout: post
 title: First nearly working prototype
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

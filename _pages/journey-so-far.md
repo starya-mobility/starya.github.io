@@ -2,6 +2,8 @@
 layout: post
 title: Journey So Far
 permalink: /journey-so-far
+lang: en
+ref : ""
 date: 2020-04-10
 author: jrk
 categories: 

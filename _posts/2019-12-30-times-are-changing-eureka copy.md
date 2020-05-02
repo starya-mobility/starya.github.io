@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Times, they are a changin! eureka & more
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

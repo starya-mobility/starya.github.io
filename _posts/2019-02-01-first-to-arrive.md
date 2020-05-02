@@ -1,6 +1,8 @@
 ---
 layout: post
 title: First to arrive
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

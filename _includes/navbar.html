@@ -60,12 +60,22 @@
         {% endfor %}
         {% endif %}
         <li class="nav-item">
-            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-            {% for pageitem in pages %}
+          {% assign posts=site.posts | where:"ref", post.ref | sort: 'lang' %}
+            {% for postitem in posts %}
+              {% if postitem.ref != "" %}
+                {% if postitem.lang != post.lang %}
+                  <a class="btn btn-success btn-icon" style="width: 6rem;" href="{{ postitem.url | prepend: site.baseurl }}">{{ site.languages[postitem.lang] }}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for pageitem in pages %}
+            {% if pageitem.ref != "" %}
               {% if pageitem.lang != page.lang %}
                 <a class="btn btn-success btn-icon" style="width: 6rem;" href="{{ pageitem.url | prepend: site.baseurl }}">{{ site.languages[pageitem.lang] }}</a>
               {% endif %}
-            {% endfor %}
+            {% endif %}
+          {% endfor %}
         </li>
       </ul>
     </div>

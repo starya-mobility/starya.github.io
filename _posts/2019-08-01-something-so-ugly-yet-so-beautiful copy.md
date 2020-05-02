@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Something so ugly, yet so beautiful!!
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

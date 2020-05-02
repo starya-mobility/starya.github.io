@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Error! error! error!
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

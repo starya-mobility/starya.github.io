@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Proof is in the pudding
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

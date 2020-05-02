@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Our First Public display
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]

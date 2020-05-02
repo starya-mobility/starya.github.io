@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Initial Brainstorms
+lang: en
+ref : ""
 author: jrk
 categories: [journey,history]
 tags: [journey]
