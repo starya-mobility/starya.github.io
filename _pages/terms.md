@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Terms and Conditions
+lang: en
+ref : ""
 permalink: /terms
 author:
 share: 

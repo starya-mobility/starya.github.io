@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
+lang: en
+ref : ""
 permalink: /privacy
 author:
 share: 

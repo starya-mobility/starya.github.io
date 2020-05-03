@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Cookie Policy
+lang: en
+ref : ""
 permalink: /cookiepolicy
 author:
 share: 
