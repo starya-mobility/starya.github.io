@@ -304,7 +304,7 @@ toc: false
 									<h2 id="upgrade-process" class="display-2 text-center">ನವೀಕರಿಸಿ</h2>
 									<div class="card shadow">
 										<div class="card-body" style="padding: 0.5rem;">
-											<img src="https://res.cloudinary.com/gowrav/image/upload/v1588483851/Gallery%20Starya/UpgradeFlowchart_zqguta.jpg" alt="UpgradeFlowchart" style="width: 100%;">
+											<img src="https://res.cloudinary.com/gowrav/image/upload/v1588486086/Gallery%20Starya/UpgradeProcess_bh61iq.jpg" alt="UpgradeFlowchart" style="width: 100%;">
 										</div>
 									</div>
 								</div>
