@@ -300,6 +300,14 @@ toc: false
 									}
 									init();
 								</script>
+								<div class="col-lg-12 mt-5 justify-content-center">
+									<h2 id="upgrade-process" class="display-2 text-center">ನವೀಕರಿಸಿ</h2>
+									<div class="card shadow">
+										<div class="card-body" style="padding: 0.5rem;">
+											<img src="https://res.cloudinary.com/gowrav/image/upload/v1588482433/Gallery%20Starya/UpgradeFlowchart_xl3kt3.jpg" alt="UpgradeFlowchart" style="width: 100%;">
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
