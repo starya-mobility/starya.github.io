@@ -5,39 +5,30 @@ t:
       url: /ark
       toottip:
       desc:
+    - title: Tech
+      fa-icon: 
+      url: /tech
+      toottip:
+      desc:
     - title: Blog
       fa-icon: 
       url: /blog
       toottip:
       desc:
-    - title: Gallery
-      fa-icon: 
-      url: /gallery
-      toottip:
-      desc:
-    - title: About
-      fa-icon: 
-      url: /about
-      toottip:
-      desc:
+      
   kn: 
     - title: ಅಜೈಲ್ ರೈಡ್ ಕಿಟ್
       fa-icon: 
       url: /ark_kn
       toottip:
       desc:
+    - title: ಟೆಕ್
+      fa-icon: 
+      url: /tech_kn
+      toottip:
+      desc:
     - title: ಬ್ಲಾಗ್
       fa-icon: 
       url: /blog_kn
-      toottip:
-      desc:
-    - title: ಗ್ಯಾಲರಿ
-      fa-icon: 
-      url: /gallery_kn
-      toottip:
-      desc:
-    - title: ನಾವು
-      fa-icon: 
-      url: /about_kn
       toottip:
       desc:

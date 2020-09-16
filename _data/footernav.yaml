@@ -6,6 +6,10 @@ t:
       url: /privacy
     - title: Cookie Policy
       url: /cookiepolicy
+    - title: Gallery
+      url: /gallery
+    - title: About
+      url: /about
   kn:
     - title: ನಿಯಮಗಳು
       url: /terms
@@ -13,6 +17,11 @@ t:
       url: /privacy
     - title: Cookie ನೀತಿ
       url: /cookiepolicy
+    - title: ಗ್ಯಾಲರಿ
+      url: /gallery_kn
+    - title: ನಾವು
+      url: /about_kn
+
 content:
   en:
     thanks: Thank you for supporting us!
